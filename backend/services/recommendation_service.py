@@ -1,5 +1,6 @@
 from typing import List, Dict, Any
 import logging
+from datetime import datetime
 from semantic.synopsis_matcher import SynopsisMatcher
 from utils.device_manager import device_manager
 
@@ -25,7 +26,7 @@ class RecommendationService:
         filtered = []
         
         # Preparar filtros
-        f_genres = [g.lower() for g in filters.get("genres", [])]
+        f_genre_ids = filters.get("genre_ids", [])
         f_year_min = filters.get("year_min")
         f_year_max = filters.get("year_max")
         f_director = filters.get("director")
@@ -40,12 +41,11 @@ class RecommendationService:
                 except:
                     continue # Si no tiene año y pedimos año, fuera.
 
-            # 2. Filtro de Género (STRICT match: si la peli tiene TODOS los géneros pedidos)
-            if f_genres:
-                m_genres = [g.lower() for g in m.get("genres", [])]
-                if not m_genres: continue
-                # Cambiamos a 'all' para que la película deba tener TODOS los géneros solicitados.
-                if not all(g in m_genres for g in f_genres):
+            # 2. Filtro de Género por ID (STRICT match: si la peli tiene TODOS los géneros pedidos)
+            if f_genre_ids:
+                m_genre_ids = m.get("genre_ids", [])
+                if not m_genre_ids: continue
+                if not all(gid in m_genre_ids for gid in f_genre_ids):
                     continue
 
             # 3. Filtro de Director (Si tenemos el dato en la respuesta de TMDB)
@@ -71,6 +71,7 @@ class RecommendationService:
             # 🧠 ADAPTACIÓN LLM → ENGINE
             # ==========================
             genres = preferences.get("genres", [])
+            director = preferences.get("director")
 
             # Adaptar rango de años si viene del LLM
             years = None
@@ -107,7 +108,7 @@ class RecommendationService:
                 actors or 
                 keywords or 
                 years or 
-                preferences.get("director") or
+                director or
                 (sort_by and sort_by != "popularity.desc")
             )
 
@@ -117,55 +118,75 @@ class RecommendationService:
 
             match_type = "exact"
 
-            # --- ESTRATEGIA HÍBRIDA PARALELA ---
-            # Ejecutamos Text Search (para títulos/tramas exactas) Y Discovery (para filtros/tops)
+            # --- ESTRATEGIA HÍBRIDA DE RECUPERACIÓN ---
             
-            # A. Búsqueda Textual (Search API)
+            # A. Búsqueda Textual (para encontrar la película de referencia o por título)
             text_movies = []
-            # Solo buscamos por texto si hay una película de referencia explícita ("similar_to")
-            # O si NO hay filtros específicos (búsqueda abierta por keyword/título)
             should_text_search = bool(preferences.get("similar_to")) or not has_specific_filters
             
             if should_text_search and semantic_query:
                 text_results_data = await self.tmdb_service.search_movies_by_query(semantic_query)
                 text_movies = text_results_data.get("results", [])
 
-            # B. Búsqueda por Filtros/Descubrimiento (Discover API)
+            # B. Búsqueda por Similitud (TMDB Similar API) - ¡NUEVO Y PRIORITARIO!
+            # Si el usuario pidió "tipo X" y encontramos X, buscamos sus similares.
+            similar_movies = []
+            if preferences.get("similar_to") and text_movies:
+                # 1. Usar el ID de la película de referencia encontrada en la búsqueda textual
+                ref_movie_id = text_movies[0].get("tmdb_id")
+                ref_movie_title_found = text_movies[0].get("title")
+                
+                # 2. Si tenemos ID, buscar similares
+                if ref_movie_id:
+                    self.logger.info(f"🔎 Buscando películas similares a '{ref_movie_title_found}' (ID: {ref_movie_id})")
+                    similar_data = await self.tmdb_service.get_similar_movies(ref_movie_id)
+                    similar_movies = similar_data.get("results", [])
+
+            # C. Búsqueda por Filtros/Descubrimiento (Discover API)
             discovery_movies = []
             if has_specific_filters:
                 # Si hay filtros explícitos (género, año, actor...), los respetamos
                 data = await self.tmdb_service.search_movies_advanced(
-                    genres=genres, actors=actors, years=years, keywords=keywords, sort_by=sort_by
+                    genres=genres, actors=actors, directors=[director] if director else None, years=years, keywords=keywords, sort_by=sort_by
                 )
                 discovery_movies = data.get("results", [])
             else:
                 # Si es búsqueda abierta, traemos populares/mejores valoradas para rellenar
                 for page in range(1, 3):
-                    data = await self.tmdb_service.search_movies_advanced(page=page, sort_by=sort_by)
+                    data = await self.tmdb_service.search_movies_advanced(
+                        page=page, sort_by=sort_by
+                    )
                     discovery_movies.extend(data.get("results", []))
                     if len(discovery_movies) >= retrieval_limit:
                         break
 
-            # C. FUSIÓN INTELIGENTE
+            # D. FUSIÓN INTELIGENTE
             # Si el usuario busca "Mejores películas" (is_best_query), confiamos más en Discovery (ordenado por nota).
             # Si busca algo específico ("Payasos asesinos"), confiamos más en Text Search.
+            # Si busca "tipo X", la máxima prioridad son los similares.
             
             final_list = []
             seen_ids = set()
 
             # Definir orden de prioridad
-            sources = [text_movies, discovery_movies] if not is_best_query else [discovery_movies, text_movies]
+            sources = [similar_movies, text_movies, discovery_movies] if not is_best_query else [discovery_movies, similar_movies, text_movies]
             
             for source in sources:
                 for m in source:
                     if m["tmdb_id"] not in seen_ids:
                         final_list.append(m)
                         seen_ids.add(m["tmdb_id"])
-            
+
             # --- FILTRADO ESTRICTO ---
             # Aplicamos los filtros duros a la lista combinada para eliminar ruido
             # (ej: Blade Runner 2049 en búsqueda de los 80, o documentales en búsqueda de director)
-            movies = self._filter_results(final_list, preferences)
+            # Convertimos nombres de género a IDs para un filtrado robusto e independiente del idioma.
+            genre_map_en = await self.tmdb_service.get_genres_list(lang="en-US")
+            genre_ids_to_filter = [genre_map_en.get(g.lower()) for g in preferences.get("genres", []) if genre_map_en.get(g.lower())]
+            filters_by_id = preferences.copy()
+            filters_by_id["genre_ids"] = [gid for gid in genre_ids_to_filter if gid is not None]
+
+            movies = self._filter_results(final_list, filters_by_id)
 
             if text_movies:
                 match_type = "exact"
@@ -182,6 +203,7 @@ class RecommendationService:
                     data = await self.tmdb_service.search_movies_advanced(
                         genres=genres,
                         actors=actors,
+                        directors=[director] if director else None,
                         keywords=keywords,
                         sort_by="popularity.desc" # Quitamos years y forzamos popularidad
                     )
@@ -219,8 +241,21 @@ class RecommendationService:
                     reverse=True
                 )
 
+            # --- FILTRO FINAL DE SEGURIDAD ---
+            # A pesar de los filtros anteriores, como salvaguarda final,
+            # nos aseguramos de no devolver películas futuras.
+            today_year = datetime.now().year
+            final_movies = []
+            for m in movies:
+                try:
+                    release_year = int(m.get("release_year", "0"))
+                    if release_year > 0 and release_year <= today_year:
+                        final_movies.append(m)
+                except (ValueError, TypeError):
+                    continue # Ignorar películas con año inválido
+
             return {
-                "results": movies[:limit],
+                "results": final_movies[:limit],
                 "match_type": match_type
             }
 
