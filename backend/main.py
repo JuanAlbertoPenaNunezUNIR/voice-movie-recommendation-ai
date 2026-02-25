@@ -366,8 +366,10 @@ async def process_text(payload: dict):
 
     # --- Si no es intent de recomendación, fallback ---
     if intent != "recommend_movies":
+        # Si el LLM no genera una respuesta (porque el intent no es de recomendación),
+        # usamos un texto por defecto para que el frontend no muestre una burbuja vacía.
         return {
-            "response": response_text,
+            "response": response_text or "No he entendido bien tu petición. ¿Puedes reformularla?",
             "recommendations": [],
             "suggest_edit": True,
             "transcription": user_text
