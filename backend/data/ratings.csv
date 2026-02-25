@@ -1,0 +1,19 @@
+user_id,movie_id,rating
+# 5 usuarios, 10 películas
+# rating de 1 a 5, puede simular feedback implícito o explícito
+# LightFM entrenará sobre estos datos para predecir preferencias futuras
+1,1,5
+1,2,4
+1,3,3
+2,1,4
+2,4,5
+2,5,3
+3,2,2
+3,3,5
+3,6,4
+4,7,5
+4,8,3
+4,9,4
+5,1,3
+5,5,4
+5,10,5

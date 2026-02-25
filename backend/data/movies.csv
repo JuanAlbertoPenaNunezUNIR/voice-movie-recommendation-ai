@@ -1,0 +1,13 @@
+movie_id,tmdb_id
+# movie_id es tu ID interno secuencial.
+# tmdb_id corresponde a películas reales de TMDB.
+1,603
+2,550
+3,500
+4,13
+5,680
+6,27205
+7,120
+8,155
+9,157336
+10,13

@@ -1,0 +1,5 @@
+# Dependencias específicas del frontend
+streamlit==1.50.0
+audio-recorder-streamlit==0.0.10
+numpy<2.0
+requests==2.32.5

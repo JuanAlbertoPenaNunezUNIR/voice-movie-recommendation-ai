@@ -1,0 +1,50 @@
+# Dependencias principales del proyecto
+
+# Backend y API
+fastapi==0.123.10
+uvicorn[standard]==0.38.0
+python-multipart==0.0.20
+pydantic==2.12.5
+websockets==15.0.1
+
+# Procesamiento de audio y voz
+openai-whisper==20250625
+soundfile==0.13.1
+pydub==0.25.1
+
+# Machine Learning y recomendación
+numpy<2.0
+lightfm @ git+https://github.com/lyst/lightfm.git
+scipy==1.16.3
+scikit-learn==1.7.2
+pandas==1.5.3
+
+# Procesamiento de lenguaje natural
+transformers==4.55.2
+# torch se instala desde Dockerfile de cada servicio
+spacy==3.8.11
+
+# Base de datos y almacenamiento
+sqlalchemy==2.0.44
+redis==7.1.0
+alembic==1.17.2
+
+# APIs externas
+requests==2.32.5
+aiohttp==3.13.2
+httpx==0.28.1
+
+# Frontend
+streamlit==1.50.0
+audio-recorder-streamlit==0.0.10
+plotly==6.5.0
+
+# Utilidades
+python-dotenv==1.2.1
+python-dateutil==2.9.0.post0
+
+# Desarrollo y testing
+pytest==9.0.1
+pytest-asyncio==1.3.0
+black==25.11.0
+flake8==7.3.0

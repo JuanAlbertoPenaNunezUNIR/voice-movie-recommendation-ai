@@ -1,0 +1,1872 @@
+2025-12-20 23:07:30,548 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-20 23:07:30,579 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-20 23:07:30,579 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-20 23:07:30,595 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-20 23:07:30,600 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-20 23:07:30,603 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-20 23:07:30,610 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-20 23:07:30,610 - models.voice_processor - INFO - 🎯 Inicializando modelo Whisper (base) en CUDA...
+2025-12-20 23:07:31,916 - models.voice_processor - INFO - ✅ Modelo Whisper cargado exitosamente
+2025-12-20 23:08:04,528 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-20 23:08:04,558 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-20 23:08:04,560 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-20 23:08:04,578 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-20 23:08:04,582 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-20 23:08:04,586 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-20 23:08:04,593 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-20 23:08:04,593 - models.voice_processor - INFO - 🎯 Inicializando modelo Whisper (base) en CUDA...
+2025-12-20 23:08:05,948 - models.voice_processor - INFO - ✅ Modelo Whisper cargado exitosamente
+2025-12-20 23:11:09,488 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-20 23:11:09,489 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-20 23:16:17,427 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2025-12-20 23:16:22,814 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-20 23:16:22,840 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-20 23:16:22,840 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-20 23:16:22,856 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-20 23:16:22,860 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-20 23:16:22,863 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-20 23:16:22,869 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-20 23:16:22,870 - models.voice_processor - INFO - 🎯 Inicializando modelo Whisper (base) en CUDA...
+2025-12-20 23:16:24,143 - models.voice_processor - INFO - ✅ Modelo Whisper cargado exitosamente
+2025-12-20 23:16:42,544 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-20 23:16:42,544 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-20 23:23:16,963 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2025-12-20 23:23:42,144 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-20 23:23:42,175 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-20 23:23:42,175 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-20 23:23:42,192 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-20 23:23:42,196 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-20 23:23:42,199 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-20 23:23:42,206 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-20 23:23:42,206 - models.voice_processor - INFO - 🎯 Inicializando modelo Whisper (base) en CUDA...
+2025-12-20 23:23:43,706 - models.voice_processor - INFO - ✅ Modelo Whisper cargado exitosamente
+2025-12-20 23:26:40,507 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-20 23:26:40,508 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-20 23:28:19,143 - AI_System - INFO - 🎭 Solicitud clonación: 'Madre' (ID: custom_1766273299)
+2025-12-20 23:29:17,953 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-20 23:29:19,684 - models.voice_processor - INFO - 📝 Transcripción: 'es como kung preservedo con Sergeval, un king de estaciones con Ottomán y el However, el crown'
+2025-12-20 23:29:19,685 - AI_System - INFO - ✅ Transcripción completada en 1.73s: 'es como kung preservedo con Sergeval, un king de e...'
+2025-12-20 23:29:19,691 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2025-12-20 23:29:19,692 - AI_System - ERROR - ❌ Error analizando preferencias: 'NLPProcessor' object has no attribute 'extract_intent_and_entities'
+2025-12-20 23:29:19,696 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2025-12-20 23:29:19,933 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2025-12-20 23:29:20,056 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2025-12-20 23:29:20,450 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2025-12-20 23:29:20,908 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2025-12-20 23:29:21,238 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1766273217
+2025-12-20 23:29:21,254 - AI_System - INFO - 🎤 Recibida solicitud de síntesis de voz
+2025-12-20 23:29:22,554 - AI_System - ERROR - ❌ Error en síntesis de voz: 'GPT2InferenceModel' object has no attribute 'generate'
+2025-12-20 23:30:01,883 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-20 23:30:02,685 - models.voice_processor - INFO - 📝 Transcripción: ''
+2025-12-20 23:30:02,685 - AI_System - INFO - ✅ Transcripción completada en 0.80s: '...'
+2025-12-20 23:30:13,971 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-20 23:30:16,791 - models.voice_processor - INFO - 📝 Transcripción: 'Un不同...'
+2025-12-20 23:30:16,792 - AI_System - INFO - ✅ Transcripción completada en 2.82s: 'Un不同......'
+2025-12-20 23:30:16,797 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2025-12-20 23:30:16,797 - AI_System - ERROR - ❌ Error analizando preferencias: 'NLPProcessor' object has no attribute 'extract_intent_and_entities'
+2025-12-20 23:30:16,801 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2025-12-20 23:30:16,998 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2025-12-20 23:30:17,129 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2025-12-20 23:30:17,286 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2025-12-20 23:30:17,424 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2025-12-20 23:30:17,425 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1766273217
+2025-12-20 23:30:17,440 - AI_System - INFO - 🎤 Recibida solicitud de síntesis de voz
+2025-12-20 23:30:17,764 - AI_System - ERROR - ❌ Error en síntesis de voz: 'GPT2InferenceModel' object has no attribute 'generate'
+2025-12-20 23:40:41,285 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-20 23:40:41,314 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-20 23:40:41,315 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-20 23:40:41,331 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-20 23:40:41,335 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-20 23:40:41,338 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-20 23:40:41,345 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-20 23:40:41,345 - models.voice_processor - INFO - 🎯 Inicializando modelo Whisper (base) en CUDA...
+2025-12-20 23:40:48,291 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-20 23:40:48,320 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-20 23:40:48,321 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-20 23:40:48,337 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-20 23:40:48,342 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-20 23:40:48,345 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-20 23:40:48,352 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-20 23:40:48,352 - models.voice_processor - INFO - 🎯 Inicializando modelo Whisper (base) en CUDA...
+2025-12-20 23:40:49,739 - models.voice_processor - INFO - ✅ Modelo Whisper cargado exitosamente
+2025-12-20 23:43:57,993 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-20 23:43:57,993 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-20 23:47:59,525 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-20 23:48:02,929 - models.voice_processor - INFO - 📝 Transcripción: 'Sí, pero no tengo discapacidad a la� bamboo'
+2025-12-20 23:48:02,929 - AI_System - INFO - ✅ Transcripción completada en 3.40s: 'Sí, pero no tengo discapacidad a la� bamboo...'
+2025-12-20 23:48:35,800 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2025-12-20 23:48:35,800 - AI_System - ERROR - ❌ Error analizando preferencias: 'NLPProcessor' object has no attribute 'extract_intent_and_entities'
+2025-12-20 23:48:35,805 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2025-12-20 23:48:36,006 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2025-12-20 23:48:36,134 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2025-12-20 23:48:36,381 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2025-12-20 23:48:36,670 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2025-12-20 23:48:36,751 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1766274459
+2025-12-20 23:48:36,766 - AI_System - INFO - 🎤 Recibida solicitud de síntesis de voz
+2025-12-20 23:48:36,767 - AI_System - ERROR - ❌ Error en síntesis de voz: Model is multi-speaker but no `speaker` is provided.
+2025-12-21 00:15:04,967 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2025-12-21 00:15:11,601 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-21 00:15:11,626 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-21 00:15:11,627 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-21 00:15:11,643 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-21 00:15:11,647 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-21 00:15:11,650 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-21 00:15:11,656 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-21 00:15:11,657 - models.voice_processor - INFO - 🎯 Inicializando modelo Whisper (base) en CUDA...
+2025-12-21 00:15:12,907 - models.voice_processor - INFO - ✅ Modelo Whisper cargado exitosamente
+2025-12-21 00:15:32,330 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-21 00:15:32,330 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-21 00:54:49,094 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2025-12-21 01:16:39,109 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-21 01:16:39,142 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-21 01:16:39,143 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-21 01:16:39,160 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-21 01:16:39,165 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-21 01:16:39,169 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-21 01:16:39,175 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-21 01:16:39,176 - models.voice_processor - INFO - 🎯 Cargando Whisper (large-v3-turbo) en CUDA [float16]
+2025-12-21 01:16:39,177 - models.voice_processor - ERROR - ❌ Error inicializando Whisper: Invalid model size 'large-v3-turbo', expected one of: tiny.en, tiny, base.en, base, small.en, small, medium.en, medium, large-v1, large-v2, large-v3, large, distil-large-v2, distil-medium.en, distil-small.en, distil-large-v3
+2025-12-21 01:16:39,177 - AI_System - ERROR - ❌ Error crítico: Invalid model size 'large-v3-turbo', expected one of: tiny.en, tiny, base.en, base, small.en, small, medium.en, medium, large-v1, large-v2, large-v3, large, distil-large-v2, distil-medium.en, distil-small.en, distil-large-v3
+2025-12-21 01:22:51,323 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-21 01:22:51,354 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-21 01:22:51,354 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-21 01:22:51,371 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-21 01:22:51,374 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-21 01:22:51,377 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-21 01:22:51,383 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-21 01:22:51,384 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2025-12-21 01:36:33,393 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-21 01:36:33,423 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-21 01:36:33,423 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-21 01:36:33,440 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-21 01:36:33,444 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-21 01:36:33,447 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-21 01:36:33,454 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-21 01:36:33,454 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2025-12-21 01:38:41,743 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2025-12-21 01:41:31,967 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-21 01:41:31,967 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-21 02:20:38,383 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2025-12-21 12:27:55,642 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-21 12:27:55,672 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-21 12:27:55,672 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-21 12:27:55,688 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-21 12:27:55,692 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-21 12:27:55,695 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-21 12:27:55,711 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-21 12:27:55,711 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2025-12-21 12:27:59,649 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2025-12-21 12:30:48,143 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-21 12:30:48,143 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-21 12:54:20,497 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-21 12:54:20,503 - faster_whisper - INFO - Processing audio with duration 00:20.672
+2025-12-21 12:54:20,687 - faster_whisper - INFO - VAD filter removed 00:20.672 of audio
+2025-12-21 12:54:20,717 - AI_System - INFO - ✅ Transcripción completada en 0.22s: '...'
+2025-12-21 12:54:41,022 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-21 12:54:41,025 - faster_whisper - INFO - Processing audio with duration 00:24.128
+2025-12-21 12:54:41,118 - faster_whisper - INFO - VAD filter removed 00:24.128 of audio
+2025-12-21 12:54:41,144 - AI_System - INFO - ✅ Transcripción completada en 0.12s: '...'
+2025-12-21 12:54:53,811 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-21 12:54:53,814 - faster_whisper - INFO - Processing audio with duration 00:17.600
+2025-12-21 12:54:53,888 - faster_whisper - INFO - VAD filter removed 00:17.600 of audio
+2025-12-21 12:54:53,923 - AI_System - INFO - ✅ Transcripción completada en 0.11s: '...'
+2025-12-21 12:55:58,312 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-21 12:55:58,314 - faster_whisper - INFO - Processing audio with duration 00:12.608
+2025-12-21 12:55:58,361 - faster_whisper - INFO - VAD filter removed 00:12.608 of audio
+2025-12-21 12:55:58,386 - AI_System - INFO - ✅ Transcripción completada en 0.07s: '...'
+2025-12-21 12:56:04,861 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-21 12:56:04,863 - faster_whisper - INFO - Processing audio with duration 00:07.104
+2025-12-21 12:56:04,892 - faster_whisper - INFO - VAD filter removed 00:07.104 of audio
+2025-12-21 12:56:04,917 - AI_System - INFO - ✅ Transcripción completada en 0.05s: '...'
+2025-12-21 13:04:27,307 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2025-12-21 13:04:27,308 - faster_whisper - INFO - Processing audio with duration 00:07.104
+2025-12-21 13:04:27,337 - faster_whisper - INFO - VAD filter removed 00:05.280 of audio
+2025-12-21 13:16:34,804 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-21 13:16:34,835 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-21 13:16:34,835 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-21 13:16:34,852 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-21 13:16:34,856 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-21 13:16:34,860 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-21 13:16:34,866 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-21 13:16:34,866 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2025-12-21 13:16:38,029 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2025-12-21 13:16:57,896 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-21 13:16:57,897 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-21 13:17:23,462 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2025-12-21 13:17:28,983 - AI_System - INFO - 🚀 Iniciando Sistema...
+2025-12-21 13:17:29,009 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2025-12-21 13:17:29,010 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2025-12-21 13:17:29,027 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2025-12-21 13:17:29,031 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2025-12-21 13:17:29,034 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2025-12-21 13:17:29,041 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2025-12-21 13:17:29,041 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2025-12-21 13:17:31,257 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2025-12-21 13:17:49,241 - models.tts_processor - INFO - ✅ TTS Cargado
+2025-12-21 13:17:49,242 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2025-12-21 13:18:04,474 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-03 15:56:17,444 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 15:56:17,483 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 15:56:17,483 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 15:56:17,498 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 15:56:17,502 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 15:56:17,505 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 15:56:17,514 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 15:56:17,514 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 15:56:17,873 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 15:56:17,905 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 15:56:17,906 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 15:56:17,922 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 15:56:17,926 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 15:56:17,929 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 15:56:17,935 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 15:56:17,935 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 16:01:36,531 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 16:01:36,531 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 16:01:36,563 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 16:01:36,563 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 16:01:36,564 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 16:01:36,564 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 16:01:36,581 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 16:01:36,582 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 16:01:36,583 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 16:01:36,585 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 16:01:36,586 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 16:01:36,592 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 16:01:36,600 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 16:01:36,600 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 16:01:36,600 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 16:01:36,600 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 16:11:06,864 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 16:11:06,876 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 16:11:22,366 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-03 16:11:22,467 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-03 17:14:04,874 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 17:14:04,874 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 17:14:04,905 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 17:14:04,905 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 17:14:04,905 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 17:14:04,905 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 17:14:04,923 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 17:14:04,923 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 17:14:04,925 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 17:14:04,928 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 17:14:04,929 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 17:14:04,931 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 17:14:04,935 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 17:14:04,936 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 17:14:04,937 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 17:14:04,937 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 17:14:12,256 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 17:14:12,270 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 17:14:27,009 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-03 17:14:27,109 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-03 18:33:29,308 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 18:33:29,308 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 18:33:29,341 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 18:33:29,341 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 18:33:29,341 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 18:33:29,341 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 18:33:29,357 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 18:33:29,358 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 18:33:29,359 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 18:33:29,362 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 18:33:29,372 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 18:33:29,372 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 18:33:29,388 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 18:33:29,388 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 18:33:29,388 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 18:33:29,388 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 18:33:37,523 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 18:33:37,524 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 19:32:09,640 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-03 19:32:09,640 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-03 19:37:17,101 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-03 19:37:17,102 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-03 19:56:09,849 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-03 19:56:09,910 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-03 19:56:10,154 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-03 19:56:10,159 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-03 19:56:10,172 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-03 19:56:10,175 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-03 19:56:43,306 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 19:56:43,306 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 19:56:43,343 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 19:56:43,343 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 19:56:43,343 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 19:56:43,343 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 19:56:43,360 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 19:56:43,361 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 19:56:43,362 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 19:56:43,365 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 19:56:43,365 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 19:56:43,368 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 19:56:43,374 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 19:56:43,374 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 19:56:43,375 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 19:56:43,375 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 19:56:51,903 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 19:56:51,941 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 20:23:25,128 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-03 20:23:25,130 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-03 20:23:56,428 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-03 20:23:56,429 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-03 20:44:56,937 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-03 20:44:56,973 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-03 20:44:57,059 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-03 20:44:57,067 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-03 20:44:57,265 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-03 20:44:57,276 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-03 20:46:27,727 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 20:46:27,728 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-03 20:46:27,760 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 20:46:27,760 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-03 20:46:27,761 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 20:46:27,761 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-03 20:46:27,777 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 20:46:27,777 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-03 20:46:27,779 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 20:46:27,781 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-03 20:46:27,782 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 20:46:27,784 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-03 20:46:27,792 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 20:46:27,792 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-03 20:46:27,792 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 20:46:27,792 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-03 20:46:35,877 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 20:46:35,889 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-03 21:27:42,390 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-03 21:27:42,392 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-03 21:28:12,175 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-03 21:28:12,176 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-04 17:50:52,507 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-04 17:50:52,508 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-04 17:50:52,539 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-04 17:50:52,539 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-04 17:50:52,539 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-04 17:50:52,539 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-04 17:50:52,558 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-04 17:50:52,559 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-04 17:50:52,561 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-04 17:50:52,564 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-04 17:50:52,572 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-04 17:50:52,572 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-04 17:50:52,586 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-04 17:50:52,586 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-04 17:50:52,586 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-04 17:50:52,587 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-04 17:51:01,752 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-04 17:51:01,752 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-04 18:20:58,860 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-04 18:20:58,862 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-04 18:21:27,219 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-04 18:21:27,219 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-04 18:36:24,442 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-04 18:36:24,442 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-04 18:36:24,565 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-04 18:36:24,572 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-04 18:36:24,716 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-04 18:36:24,728 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-04 18:40:05,122 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-04 18:40:05,124 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-04 18:40:05,161 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-04 18:40:05,161 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-04 18:40:05,161 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-04 18:40:05,161 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-04 18:40:05,179 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-04 18:40:05,180 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-04 18:40:05,181 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-04 18:40:05,184 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-04 18:40:05,185 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-04 18:40:05,187 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-04 18:40:05,195 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-04 18:40:05,195 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-04 18:40:05,195 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-04 18:40:05,195 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-04 18:40:13,025 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-04 18:40:13,025 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-04 18:41:11,593 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-04 18:41:11,593 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-04 18:41:11,630 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-04 18:41:11,630 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-04 18:41:11,630 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-04 18:41:11,630 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-04 18:41:11,649 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-04 18:41:11,650 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-04 18:41:11,652 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-04 18:41:11,655 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-04 18:41:11,656 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-04 18:41:11,659 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-04 18:41:11,663 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-04 18:41:11,664 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-04 18:41:11,666 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-04 18:41:11,666 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-04 18:41:19,731 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-04 18:41:19,732 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-04 19:00:38,962 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-04 19:00:38,968 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-04 19:01:02,901 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-04 19:01:02,969 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:01:18,872 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:01:20,846 - utils.device_manager - INFO - 🔧 Dispositivo cambiado a: CPU
+2026-01-04 19:01:20,846 - AI_System - INFO - 🔧 Dispositivo seleccionado: CPU
+2026-01-04 19:01:20,856 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:01:33,439 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:01:37,645 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:01:38,512 - AI_System - INFO - 🔧 Dispositivo seleccionado: CUDA
+2026-01-04 19:01:38,531 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:01:57,166 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-04 19:01:57,167 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-04 19:02:13,461 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-04 19:02:13,492 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:02:33,739 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:02:37,235 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:02:37,252 - AI_System - INFO - 🎭 Solicitud clonación: 'Madre' (ID: user_1767553262)
+2026-01-04 19:02:37,356 - httpx - INFO - HTTP Request: POST http://nlp_service:8001/clone-voice "HTTP/1.1 200 OK"
+2026-01-04 19:02:37,454 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:02:45,172 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:02:55,087 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:02:55,213 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:02:55,226 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-04 19:02:55,226 - AI_System - ERROR - ❌ Error analizando preferencias: 'NLPProcessor' object has no attribute 'extract_intent_and_entities'
+2026-01-04 19:03:44,575 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:03:44,686 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:03:44,697 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-04 19:03:44,697 - AI_System - ERROR - ❌ Error analizando preferencias: 'NLPProcessor' object has no attribute 'extract_intent_and_entities'
+2026-01-04 19:16:18,966 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:17:49,346 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:17:57,850 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:17:57,913 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-04 19:17:57,931 - faster_whisper - INFO - Processing audio with duration 00:09.728
+2026-01-04 19:18:09,320 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-04 19:18:09,355 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-04 19:18:09,355 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-04 19:18:09,370 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-04 19:18:09,373 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-04 19:18:09,377 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-04 19:18:09,385 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-04 19:18:09,385 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-04 19:18:16,268 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-04 19:18:35,866 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-04 19:18:35,867 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-04 19:18:55,622 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-04 19:18:55,651 - httpx - INFO - HTTP Request: GET http://nlp_service:8001/voices "HTTP/1.1 200 OK"
+2026-01-04 19:18:55,727 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-04 19:18:55,734 - faster_whisper - INFO - Processing audio with duration 00:09.728
+2026-01-04 19:19:06,264 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-04 19:19:06,297 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-04 19:19:06,297 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-04 19:19:06,317 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-04 19:19:06,321 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-04 19:19:06,324 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-04 19:19:06,331 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-04 19:19:06,331 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-04 19:19:12,832 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-04 19:19:32,484 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-04 19:19:32,485 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-04 20:19:08,656 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-04 20:19:08,661 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-04 20:19:08,673 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-04 20:19:08,826 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-04 20:19:08,836 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-15 01:17:30,394 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-15 01:17:30,394 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-15 01:17:30,439 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-15 01:17:30,439 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-15 01:17:30,439 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-15 01:17:30,439 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-15 01:17:30,457 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-15 01:17:30,458 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-15 01:17:30,459 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-15 01:17:30,462 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-15 01:17:30,463 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-15 01:17:30,465 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-15 01:17:30,487 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-15 01:17:30,487 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-15 01:17:30,488 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-15 01:17:30,488 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-15 01:17:40,207 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-15 01:17:40,207 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-15 01:17:57,181 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-15 01:17:57,283 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-15 01:22:31,890 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-15 01:22:31,929 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-15 01:22:31,929 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-15 01:22:31,946 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-15 01:22:31,950 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-15 01:22:31,954 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-15 01:22:31,965 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-15 01:22:31,965 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-15 01:22:36,125 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-15 01:22:36,173 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-15 01:22:36,173 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-15 01:22:36,208 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-15 01:22:36,214 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-15 01:22:36,218 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-15 01:22:36,227 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-15 01:22:36,227 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-15 01:22:39,941 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-15 01:22:44,227 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-15 01:23:08,617 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-15 01:23:08,619 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-15 01:23:08,922 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-15 01:23:08,931 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-16 19:29:52,948 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-16 19:29:52,949 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-16 19:29:52,991 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-16 19:29:52,991 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-16 19:29:52,991 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-16 19:29:52,991 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-16 19:29:53,014 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-16 19:29:53,016 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-16 19:29:53,019 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-16 19:29:53,021 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-16 19:29:53,025 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-16 19:29:53,029 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-16 19:29:53,047 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-16 19:29:53,047 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-16 19:29:53,047 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-16 19:29:53,047 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-16 19:30:03,756 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-16 19:30:03,763 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-16 19:35:23,888 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-16 19:35:23,920 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-16 19:35:23,920 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-16 19:35:23,938 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-16 19:35:23,942 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-16 19:35:23,946 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-16 19:35:23,957 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-16 19:35:23,957 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-16 19:35:32,443 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-16 19:35:37,455 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-16 19:35:37,488 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-16 19:35:37,489 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-16 19:35:37,507 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-16 19:35:37,511 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-16 19:35:37,516 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-16 19:35:37,532 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-16 19:35:37,532 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-16 19:35:45,612 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-16 19:35:55,106 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-16 19:35:55,107 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-16 19:36:11,651 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-16 19:36:11,655 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-16 19:37:10,310 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-16 19:37:10,361 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-16 19:37:10,811 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-16 19:37:10,865 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-16 22:03:32,470 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-16 22:03:32,472 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-16 22:03:32,508 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-16 22:03:32,508 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-16 22:03:32,515 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-16 22:03:32,515 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-16 22:03:32,529 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-16 22:03:32,531 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-16 22:03:32,544 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-16 22:03:32,551 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-16 22:03:32,554 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-16 22:03:32,555 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-16 22:03:32,556 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-16 22:03:32,560 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-16 22:03:32,570 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-16 22:03:32,571 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-16 22:03:44,409 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-16 22:03:44,409 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-16 22:08:38,849 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-16 22:08:38,849 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-16 22:08:52,575 - models.tts_processor - INFO - ✅ TTS Cargado
+2026-01-16 22:08:52,576 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-16 22:36:33,989 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-16 22:36:33,990 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-16 22:36:34,108 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-16 22:36:34,114 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-16 22:36:34,252 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-16 22:36:34,262 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-16 23:24:55,298 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-16 23:24:55,298 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-16 23:24:55,333 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-16 23:24:55,333 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-16 23:24:55,334 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-16 23:24:55,335 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-16 23:24:55,351 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-16 23:24:55,352 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-16 23:24:55,353 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-16 23:24:55,357 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-16 23:24:55,358 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-16 23:24:55,360 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-16 23:24:55,368 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-16 23:24:55,368 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-16 23:24:55,368 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-16 23:24:55,368 - models.voice_processor - INFO - 🎯 Cargando Whisper (distil-large-v3) en CUDA [float16]
+2026-01-16 23:25:04,765 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-16 23:25:04,765 - models.voice_processor - INFO - ✅ Whisper large-v3-turbo cargado correctamente
+2026-01-18 14:13:49,861 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-18 14:13:49,861 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-18 14:13:49,861 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-18 14:13:49,861 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-18 14:13:49,862 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-18 14:13:49,862 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-18 14:13:49,882 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-18 14:13:49,883 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-18 14:13:49,884 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-18 14:13:49,888 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-18 14:13:49,890 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-18 14:13:49,892 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-18 14:13:49,901 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-18 14:13:49,901 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-18 14:13:49,902 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-18 14:13:49,902 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-18 14:14:04,716 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-18 14:14:04,717 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-18 14:14:04,719 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-18 14:14:04,719 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-18 14:14:32,087 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-18 14:14:32,187 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-18 14:19:07,997 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-18 14:19:08,005 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-18 14:19:08,778 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-18 14:19:08,784 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 09:32:01,064 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 09:32:01,064 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 09:32:01,064 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 09:32:01,065 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 09:32:01,065 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 09:32:01,065 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 09:32:01,081 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 09:32:01,082 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 09:32:01,083 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 09:32:01,086 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 09:32:01,087 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 09:32:01,089 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 09:32:01,104 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 09:32:01,104 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 09:32:01,104 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 09:32:01,104 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 09:32:12,374 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 09:32:12,374 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 09:32:12,399 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 09:32:12,399 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 09:32:36,487 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 09:32:36,488 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 09:32:36,584 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 09:32:36,585 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 10:05:22,442 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 10:05:22,442 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 10:05:22,781 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 10:05:22,794 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 10:05:22,804 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 10:05:22,821 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 11:49:28,711 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 11:49:28,711 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 11:49:28,711 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 11:49:28,711 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 11:49:28,711 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 11:49:28,712 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 11:49:28,728 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 11:49:28,728 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 11:49:28,729 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 11:49:28,732 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 11:49:28,733 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 11:49:28,734 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 11:49:28,742 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 11:49:28,742 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 11:49:28,742 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 11:49:28,742 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 11:49:37,150 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 11:49:37,152 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 11:49:37,161 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 11:49:37,162 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 11:55:00,893 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 11:55:00,895 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 11:55:43,801 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 11:55:43,802 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 12:19:33,213 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-19 12:19:33,228 - faster_whisper - INFO - Processing audio with duration 00:07.424
+2026-01-19 12:19:33,452 - faster_whisper - INFO - VAD filter removed 00:05.952 of audio
+2026-01-19 12:19:34,352 - AI_System - INFO - ✅ Transcripción completada en 1.14s: 'Yeah....'
+2026-01-19 12:19:34,356 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 12:19:34,356 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 12:19:34,358 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 12:19:34,607 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 12:19:34,815 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 12:19:35,264 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 12:19:35,773 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 12:19:36,068 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768824467
+2026-01-19 12:19:36,086 - models.tts_processor - WARNING - No hay voz clonada disponible. XTTS requiere un speaker_wav. Sintetizando sin referencia.
+2026-01-19 12:19:36,087 - models.tts_processor - ERROR - ❌ Error síntesis: Model is multi-speaker but no `speaker` is provided.
+2026-01-19 12:20:35,092 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-19 12:20:35,110 - faster_whisper - INFO - Processing audio with duration 00:27.520
+2026-01-19 12:20:35,219 - faster_whisper - INFO - VAD filter removed 00:27.520 of audio
+2026-01-19 12:20:35,244 - AI_System - INFO - ✅ Transcripción completada en 0.15s: '...'
+2026-01-19 12:20:37,997 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-19 12:20:38,010 - faster_whisper - INFO - Processing audio with duration 00:27.520
+2026-01-19 12:20:38,117 - faster_whisper - INFO - VAD filter removed 00:27.520 of audio
+2026-01-19 12:20:38,151 - AI_System - INFO - ✅ Transcripción completada en 0.15s: '...'
+2026-01-19 13:03:56,339 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 13:03:56,345 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 13:03:56,554 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 13:03:56,567 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 13:03:56,576 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 13:03:56,586 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 13:04:55,997 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 13:04:55,997 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 13:04:55,997 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 13:04:55,997 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 13:04:55,997 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 13:04:55,997 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 13:04:56,014 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 13:04:56,015 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 13:04:56,017 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 13:04:56,017 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 13:04:56,020 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 13:04:56,020 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 13:04:56,029 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 13:04:56,029 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 13:04:56,029 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 13:04:56,029 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 13:05:07,905 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 13:05:07,905 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 13:05:07,908 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 13:05:07,908 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 13:10:40,288 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 13:10:40,289 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 13:12:21,913 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 13:12:21,914 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 13:15:45,722 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-19 13:15:45,747 - faster_whisper - INFO - Processing audio with duration 00:18.688
+2026-01-19 13:15:48,009 - AI_System - INFO - ✅ Transcripción completada en 2.29s: 'The  I'm the other than  I'm the other  Ben-down  ...'
+2026-01-19 13:15:48,013 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:15:48,014 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:15:48,015 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:15:48,239 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:15:48,439 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:15:48,706 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:15:49,123 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:15:49,297 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768828495
+2026-01-19 13:15:49,317 - models.tts_processor - WARNING - No hay voz clonada disponible. XTTS requiere un speaker_wav o speaker interno.
+2026-01-19 13:16:34,177 - models.tts_processor - INFO - ✅ Voz clonada guardada: Madre
+2026-01-19 13:17:00,768 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:17:00,769 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:17:00,771 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:17:01,554 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:17:01,908 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:17:02,103 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:17:02,261 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:17:02,290 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768828495
+2026-01-19 13:17:03,542 - models.tts_processor - ERROR - ❌ Error síntesis: 'GPT2InferenceModel' object has no attribute 'generate'
+2026-01-19 13:22:41,070 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 13:22:41,070 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 13:22:41,159 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 13:22:41,160 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 13:22:41,165 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 13:22:41,165 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 13:24:56,868 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 13:24:56,868 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 13:24:56,868 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 13:24:56,869 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 13:24:56,869 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 13:24:56,869 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 13:24:56,887 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 13:24:56,887 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 13:24:56,889 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 13:24:56,889 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 13:24:56,892 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 13:24:56,892 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 13:24:56,900 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 13:24:56,900 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 13:24:56,900 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 13:24:56,900 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 13:25:05,401 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 13:25:05,404 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 13:25:05,426 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 13:25:05,428 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 13:28:44,141 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 13:28:44,143 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 13:29:40,661 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:29:40,662 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:29:40,666 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:29:40,907 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:29:41,047 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:29:41,240 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:29:41,431 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:29:41,472 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768829355
+2026-01-19 13:29:43,422 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 13:29:43,422 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 13:30:22,085 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:30:22,086 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:30:22,090 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:30:23,399 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:30:23,791 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:30:25,625 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:30:25,876 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:30:25,913 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768829355
+2026-01-19 13:30:25,935 - models.tts_processor - INFO - Usando primera voz clonada disponible: voice_1768828594
+2026-01-19 13:31:18,988 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:31:18,988 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:31:18,990 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:31:19,197 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:31:19,330 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:31:19,466 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:31:19,603 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:31:19,604 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768829355
+2026-01-19 13:37:24,858 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 13:37:24,859 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 13:37:24,939 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 13:37:24,944 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 13:37:25,111 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 13:37:25,141 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 13:37:33,124 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 13:37:33,124 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 13:37:33,124 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 13:37:33,124 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 13:37:33,125 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 13:37:33,125 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 13:37:33,142 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 13:37:33,142 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 13:37:33,144 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 13:37:33,146 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 13:37:33,147 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 13:37:33,149 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 13:37:33,155 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 13:37:33,155 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 13:37:33,155 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 13:37:33,155 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 13:37:40,203 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 13:37:40,204 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 13:37:40,205 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 13:37:40,205 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 13:41:22,548 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 13:41:22,549 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 13:42:18,412 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 13:42:18,413 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 13:46:39,223 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:46:39,223 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:46:39,229 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:46:39,449 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:46:39,586 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:46:39,784 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:46:39,963 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:46:39,999 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768830374
+2026-01-19 13:46:40,017 - models.tts_processor - INFO - Sintetizando con voz clonada seleccionada: voice_1768828594
+2026-01-19 13:48:12,629 - models.tts_processor - INFO - ✅ Voz clonada guardada: Alberto
+2026-01-19 13:48:17,898 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:48:17,898 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:48:17,901 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:48:18,079 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:48:18,286 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:48:18,434 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:48:18,574 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:48:18,575 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768830374
+2026-01-19 13:48:18,597 - models.tts_processor - INFO - Usando primera voz clonada disponible: voice_1768828594
+2026-01-19 13:48:54,410 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:48:54,411 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:48:54,413 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:48:54,583 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:48:54,718 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:48:54,854 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:48:54,989 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:48:54,990 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768830374
+2026-01-19 13:48:55,005 - models.tts_processor - INFO - Sintetizando con voz clonada seleccionada: voice_1768830492
+2026-01-19 13:49:36,422 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:49:36,423 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:49:36,425 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:49:36,613 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:49:36,747 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:49:36,884 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:49:37,021 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:49:37,021 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768830374
+2026-01-19 13:49:37,036 - models.tts_processor - INFO - Sintetizando con voz clonada seleccionada: voice_1768828594
+2026-01-19 13:51:16,528 - models.tts_processor - INFO - ✅ Voz clonada guardada: Madre 2
+2026-01-19 13:51:25,870 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 13:51:25,870 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 13:51:25,872 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 13:51:26,068 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 13:51:26,201 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 13:51:26,332 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 13:51:26,463 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 13:51:26,463 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768830374
+2026-01-19 13:51:26,479 - models.tts_processor - INFO - Sintetizando con voz clonada seleccionada: voice_1768830676
+2026-01-19 13:55:54,195 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 13:55:54,245 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 13:55:54,284 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 13:55:54,290 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 13:55:54,308 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 13:55:54,312 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 13:56:01,958 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 13:56:01,958 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 13:56:01,959 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 13:56:01,959 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 13:56:01,959 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 13:56:01,959 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 13:56:01,976 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 13:56:01,976 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 13:56:01,977 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 13:56:01,978 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 13:56:01,981 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 13:56:01,981 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 13:56:01,988 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 13:56:01,988 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 13:56:01,989 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 13:56:01,989 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 13:56:12,824 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 13:56:12,825 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 13:56:12,825 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 13:56:12,825 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 14:00:07,351 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 14:00:07,353 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 14:00:54,003 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 14:00:54,004 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 14:52:53,954 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 14:52:53,954 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 14:52:53,957 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 14:52:54,724 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 14:52:54,858 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 14:52:55,373 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 14:52:56,379 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 14:52:56,489 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768834264
+2026-01-19 14:52:56,507 - models.tts_processor - INFO - Sintetizando con voz clonada seleccionada: voice_1768828594
+2026-01-19 14:52:57,562 - models.tts_processor - ERROR - ❌ Error síntesis: The following `model_kwargs` are not used by the model: ['decoder_iterations'] (note: typos in the generate arguments will also show up in this list)
+2026-01-19 14:54:51,613 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 14:54:51,613 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 14:54:51,696 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 14:54:51,697 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 14:54:51,702 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 14:54:51,702 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 14:54:59,082 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 14:54:59,082 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 14:54:59,082 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 14:54:59,083 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 14:54:59,083 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 14:54:59,083 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 14:54:59,100 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 14:54:59,101 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 14:54:59,102 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 14:54:59,105 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 14:54:59,106 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 14:54:59,107 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 14:54:59,114 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 14:54:59,114 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 14:54:59,114 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 14:54:59,114 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 14:55:06,200 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 14:55:06,201 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 14:55:06,229 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 14:55:06,231 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 14:58:30,806 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 14:58:30,808 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 14:59:30,672 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 14:59:30,685 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 17:00:47,697 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 17:00:47,703 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 17:00:47,708 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 17:00:48,208 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 17:00:48,368 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 17:00:48,651 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 17:00:48,838 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 17:00:49,059 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768842005
+2026-01-19 17:00:49,080 - models.tts_processor - INFO - Sintetizando con voz clonada seleccionada: voice_1768828594
+2026-01-19 17:02:27,287 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 17:02:27,287 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 17:02:27,290 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 17:02:27,515 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 17:02:27,658 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 17:02:28,094 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 17:02:28,232 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 17:02:28,232 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768842005
+2026-01-19 17:02:28,249 - models.tts_processor - INFO - Sintetizando con voz clonada seleccionada: voice_1768830676
+2026-01-19 17:13:20,435 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-19 17:13:20,478 - faster_whisper - INFO - Processing audio with duration 00:22.400
+2026-01-19 17:13:22,559 - AI_System - INFO - ✅ Transcripción completada en 2.12s: 'I'm in the world.  I'm going to be able to say,  I...'
+2026-01-19 17:13:22,563 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 17:13:22,563 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 17:13:22,565 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 17:13:22,821 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 17:13:22,955 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 17:13:23,088 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 17:13:23,230 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 17:13:23,230 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768842005
+2026-01-19 17:13:23,247 - models.tts_processor - INFO - Sintetizando con voz clonada seleccionada: voice_1768830676
+2026-01-19 17:19:14,192 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 17:19:14,227 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 17:19:14,618 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 17:19:14,720 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 17:19:22,085 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 17:19:22,086 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 17:19:22,086 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 17:19:22,086 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 17:19:22,086 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 17:19:22,086 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 17:19:22,103 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 17:19:22,103 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 17:19:22,105 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 17:19:22,105 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 17:19:22,108 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 17:19:22,108 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 17:19:22,115 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 17:19:22,115 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 17:19:22,115 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 17:19:22,115 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 17:19:29,313 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 17:19:29,314 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 17:19:29,346 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 17:19:29,348 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 17:25:22,661 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 17:25:22,661 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 17:25:31,852 - models.tts_processor - ERROR - ❌ Error cargando TTS: ('Connection broken: IncompleteRead(1718812794 bytes read, 149116324 more expected)', IncompleteRead(1718812794 bytes read, 149116324 more expected))
+2026-01-19 17:25:31,853 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 17:26:50,044 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-19 17:26:50,081 - faster_whisper - INFO - Processing audio with duration 00:07.125
+2026-01-19 17:26:51,146 - AI_System - INFO - ✅ Transcripción completada en 1.10s: 'This is a second  This is a second proof of audio ...'
+2026-01-19 17:26:51,150 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 17:26:51,150 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 17:26:51,152 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 17:26:51,425 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 17:26:51,948 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 17:26:52,312 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 17:26:52,693 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 17:26:52,905 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768843594
+2026-01-19 17:26:52,923 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 17:30:47,813 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 17:30:47,901 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 17:30:47,907 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 17:31:47,860 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 17:31:47,860 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 17:31:47,860 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 17:31:47,860 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 17:31:47,860 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 17:31:47,860 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 17:31:47,877 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 17:31:47,878 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 17:31:47,879 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 17:31:47,880 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 17:31:47,883 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 17:31:47,883 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 17:31:47,890 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 17:31:47,890 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 17:31:47,890 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 17:31:47,890 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 17:31:55,904 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 17:31:55,905 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 17:31:55,938 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 17:31:55,939 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 17:32:25,475 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 17:32:25,476 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 17:32:25,476 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-19 17:32:25,476 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 17:32:25,476 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-19 17:32:25,476 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-19 17:32:25,493 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 17:32:25,494 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-19 17:32:25,495 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 17:32:25,497 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-19 17:32:25,498 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 17:32:25,500 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-19 17:32:25,504 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 17:32:25,504 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 17:32:25,505 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-19 17:32:25,506 - models.voice_processor - INFO - 🎙️ Cargando Whisper (distil-large-v3) en CUDA [float16]...
+2026-01-19 17:32:33,229 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 17:32:33,231 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 17:32:33,298 - models.voice_processor - INFO - ✅ Whisper cargado correctamente.
+2026-01-19 17:32:33,300 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 17:47:59,307 - models.tts_processor - ERROR - ❌ Error cargando TTS: ('Connection broken: IncompleteRead(1519420198 bytes read, 348508920 more expected)', IncompleteRead(1519420198 bytes read, 348508920 more expected))
+2026-01-19 17:47:59,369 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 17:47:59,916 - models.tts_processor - ERROR - ❌ Error cargando TTS: [Errno 2] No such file or directory: '/root/.local/share/tts/tts_models--multilingual--multi-dataset--xtts_v2'
+2026-01-19 17:47:59,917 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-19 17:49:38,973 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-19 17:49:38,974 - models.voice_processor - INFO - 🎙️ Transcribiendo audio con idioma forzado: es
+2026-01-19 17:49:38,995 - faster_whisper - INFO - Processing audio with duration 00:03.755
+2026-01-19 17:49:39,039 - models.voice_processor - INFO - 🌐 Idioma detectado por Whisper: es (probabilidad: N/A)
+2026-01-19 17:49:39,776 - models.voice_processor - INFO - ✅ Transcripción generada (42 caracteres): 'Recommendomined. a film actual, for favor....'
+2026-01-19 17:49:39,776 - AI_System - INFO - ✅ Transcripción completada en 0.80s: 'Recommendomined. a film actual, for favor....'
+2026-01-19 17:49:39,780 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-19 17:49:39,780 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-19 17:49:39,782 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-19 17:49:40,992 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-19 17:49:41,173 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-19 17:49:41,510 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-19 17:49:41,814 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-19 17:49:41,851 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1768844952
+2026-01-19 17:49:41,868 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-19 17:53:35,097 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-19 17:53:35,107 - models.tts_processor - INFO - Usando primera voz clonada disponible: voice_1768828594
+2026-01-19 17:58:11,333 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 17:58:11,334 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-19 17:58:11,422 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 17:58:11,423 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-19 17:58:11,427 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-19 17:58:11,428 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-21 13:26:27,243 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:26:27,243 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:26:27,244 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:26:27,244 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:26:27,244 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:26:27,245 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:26:27,264 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:26:27,265 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:26:27,266 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:26:27,267 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:26:27,270 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:26:27,271 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:26:27,285 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:26:27,285 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:26:27,286 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:26:27,286 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:33:44,929 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 13:33:44,952 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 13:34:00,896 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:34:00,897 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:34:00,897 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:34:00,922 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:34:00,929 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:34:00,934 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:34:00,948 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:34:00,949 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:34:34,791 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 13:34:34,838 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 13:34:51,788 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 13:34:51,819 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 13:35:09,927 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:35:09,927 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:35:09,927 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:35:09,948 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:35:09,953 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:35:09,958 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:35:09,969 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:35:09,969 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:35:42,975 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 13:35:43,006 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 13:40:47,844 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 13:40:47,851 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 13:40:47,852 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 13:42:01,714 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 13:42:01,719 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 13:42:01,719 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 13:43:26,606 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:43:26,613 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:43:26,613 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:43:26,633 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:43:26,638 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:43:26,654 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:43:26,685 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:43:26,685 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:43:38,392 - AI_System - INFO - 📝 Recibida solicitud de transcripción
+2026-01-21 13:43:45,511 - AI_System - INFO - ✅ Transcripción completada en 7.11s (confidence=0.768)
+2026-01-21 13:43:45,527 - AI_System - INFO - 🧠 Recibida solicitud de análisis de preferencias
+2026-01-21 13:43:45,529 - AI_System - INFO - ✅ Preferencias extraídas: 0 géneros
+2026-01-21 13:43:45,535 - AI_System - INFO - 🎯 Recibida solicitud de recomendaciones
+2026-01-21 13:43:46,026 - services.tmdb_service - WARNING - ⚠️ Película 0 no encontrada en TMDB
+2026-01-21 13:43:46,223 - services.tmdb_service - WARNING - ⚠️ Película 1 no encontrada en TMDB
+2026-01-21 13:43:46,917 - services.tmdb_service - WARNING - ⚠️ Película 4 no encontrada en TMDB
+2026-01-21 13:43:47,410 - services.tmdb_service - WARNING - ⚠️ Película 7 no encontrada en TMDB
+2026-01-21 13:43:47,743 - services.recommendation_service - INFO - ✅ Se han enriquecido 6 recomendaciones para user_1769002937
+2026-01-21 13:43:47,883 - models.tts_processor - INFO - Usando primera voz clonada disponible: voice_1768828594
+2026-01-21 13:44:04,489 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:44:04,490 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:44:04,490 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:44:04,511 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:44:04,515 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:44:04,522 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:44:04,541 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:44:04,541 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:44:44,288 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:44:44,289 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:44:44,289 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:44:44,310 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:44:44,328 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:44:44,339 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:44:44,356 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:44:44,356 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:45:42,118 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 13:45:42,121 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 13:46:16,945 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 13:46:16,946 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 13:46:16,947 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 13:46:33,516 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:46:33,516 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:46:33,517 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:46:33,544 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:46:33,550 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:46:33,558 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:46:33,581 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:46:33,581 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:47:10,568 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:47:10,568 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:47:10,569 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:47:10,588 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:47:10,592 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:47:10,598 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:47:10,614 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:47:10,615 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:47:43,443 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:47:43,444 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:47:43,444 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:47:43,461 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:47:43,465 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:47:43,470 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:47:43,488 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:47:43,488 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:48:20,540 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:48:20,541 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:48:20,542 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:48:20,564 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:48:20,570 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:48:20,577 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:48:20,595 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:48:20,595 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:48:59,925 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:48:59,926 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:48:59,926 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:48:59,945 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:48:59,950 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:48:59,955 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:48:59,973 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:48:59,973 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:49:37,796 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:49:37,797 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:49:37,797 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:49:37,818 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:49:37,823 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:49:37,830 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:49:37,849 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:49:37,849 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:50:33,724 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:50:33,724 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:50:33,725 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:50:33,754 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:50:33,760 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:50:33,766 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:50:33,789 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:50:33,789 - models.voice_processor - INFO - 🎙️ Cargando Whisper large-v3 en CUDA
+2026-01-21 13:51:13,804 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 13:51:13,805 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 13:51:13,805 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 13:51:13,827 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 13:51:13,832 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 13:51:13,839 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 13:51:13,858 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 13:51:13,858 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 13:54:12,970 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 13:54:12,973 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 13:54:33,986 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 13:54:33,987 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 13:54:33,987 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 14:24:05,443 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-21 14:24:05,443 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-21 14:24:05,694 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-21 14:24:05,705 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-21 15:15:30,946 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 15:15:30,946 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 15:15:30,947 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 15:15:30,948 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 15:15:30,948 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 15:15:30,949 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 15:15:30,964 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 15:15:30,964 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 15:15:30,966 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 15:15:30,969 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 15:15:30,969 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 15:15:30,971 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 15:15:30,979 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 15:15:30,979 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 15:15:30,979 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 15:15:30,979 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 15:25:23,395 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 15:25:23,417 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 15:25:45,414 - matplotlib.font_manager - INFO - generated new fontManager
+2026-01-21 15:26:27,169 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 15:26:27,189 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 15:32:43,379 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 15:32:43,382 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 15:32:43,382 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 15:33:17,829 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 15:33:17,832 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 15:33:17,832 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 15:57:23,224 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 15:57:23,224 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 15:57:23,225 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 15:57:23,240 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 15:57:23,244 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 15:57:23,247 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 15:57:23,255 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 15:57:23,255 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 15:57:37,012 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 15:57:37,014 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 15:57:58,026 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 15:57:58,027 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 15:57:58,027 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 16:01:38,160 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 16:01:38,160 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 16:01:38,160 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 16:01:38,176 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 16:01:38,180 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 16:01:38,183 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 16:01:38,192 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 16:01:38,192 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 16:01:51,406 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 16:01:51,408 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 16:02:11,050 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 16:02:11,050 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 16:02:11,051 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 16:06:57,885 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 16:06:57,886 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 16:06:57,886 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 16:06:57,909 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 16:06:57,914 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 16:06:57,917 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 16:06:57,927 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 16:06:57,927 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 16:07:14,213 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 16:07:14,216 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 16:07:37,739 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 16:07:37,740 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 16:07:37,740 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 16:23:07,697 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 16:23:07,698 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 16:23:07,698 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 16:23:07,712 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 16:23:07,715 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 16:23:07,720 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 16:23:07,737 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 16:23:07,737 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 16:23:18,573 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 16:23:18,574 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 16:23:36,842 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 16:23:36,843 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 16:23:36,844 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 16:27:59,343 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 16:27:59,344 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 16:27:59,344 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 16:27:59,361 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 16:27:59,365 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 16:27:59,368 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 16:27:59,377 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 16:27:59,377 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 16:28:09,675 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 16:28:09,677 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 16:28:29,026 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 16:28:29,028 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 16:28:29,028 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 16:44:23,924 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 16:44:23,925 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 16:44:23,925 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 16:44:23,941 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 16:44:23,945 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 16:44:23,948 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 16:44:23,957 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 16:44:23,957 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 16:44:36,250 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 16:44:36,251 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 16:44:54,767 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 16:44:54,768 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 16:44:54,768 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 17:22:38,127 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 17:22:38,127 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 17:22:38,128 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 17:22:38,144 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 17:22:38,147 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 17:22:38,150 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 17:22:38,159 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 17:22:38,159 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 17:22:53,780 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 17:22:53,784 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 17:23:14,258 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 17:23:14,262 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 17:23:14,262 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 17:34:10,152 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 17:34:10,153 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 17:34:10,153 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 17:34:10,169 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 17:34:10,172 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 17:34:10,176 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 17:34:10,183 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 17:34:10,184 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 17:34:25,458 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 17:34:25,463 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 17:34:48,196 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 17:34:48,198 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 17:34:48,198 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 18:39:40,853 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 18:39:40,856 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 18:39:40,856 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 18:39:40,873 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 18:39:40,876 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 18:39:40,892 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 18:39:40,918 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 18:39:40,918 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 18:39:53,543 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 18:39:53,546 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 18:40:13,304 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 18:40:13,305 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 18:40:13,305 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 18:42:55,489 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 18:42:55,489 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 18:42:55,490 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 18:42:55,509 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 18:42:55,512 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 18:42:55,517 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 18:42:55,532 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 18:42:55,533 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 18:43:14,906 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 18:43:14,909 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 18:43:44,310 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 18:43:44,321 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 18:43:44,322 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 19:02:28,834 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 19:02:28,835 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 19:02:28,835 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 19:02:28,852 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 19:02:28,855 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 19:02:28,858 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 19:02:28,867 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 19:02:28,868 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 19:02:42,940 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 19:02:42,942 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 19:03:03,468 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 19:03:03,469 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 19:03:03,469 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 19:33:28,975 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 19:33:28,976 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 19:33:28,976 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 19:33:28,992 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 19:33:28,996 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 19:33:29,002 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 19:33:29,014 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 19:33:29,014 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 19:34:01,809 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 19:34:01,810 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 19:34:01,810 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 19:34:01,827 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 19:34:01,831 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 19:34:01,836 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 19:34:01,849 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 19:34:01,849 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 19:34:15,414 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 19:34:15,418 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 19:34:30,195 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 19:34:30,197 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 19:34:30,197 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 19:54:36,353 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 19:54:36,356 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 19:54:36,356 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 19:54:36,372 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 19:54:36,377 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 19:54:36,381 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 19:54:36,417 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 19:54:36,417 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 19:54:57,203 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 19:54:57,209 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 19:55:15,185 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 19:55:15,186 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 19:55:15,186 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 20:06:00,146 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 20:06:00,147 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 20:06:00,147 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 20:06:00,165 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 20:06:00,169 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 20:06:00,173 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 20:06:00,182 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 20:06:00,182 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 20:06:16,166 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 20:06:16,168 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 20:06:39,357 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 20:06:39,358 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 20:06:39,358 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 20:16:01,383 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-21 20:16:01,381 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-21 20:16:01,818 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-21 20:16:01,860 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-21 20:16:01,909 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-21 20:16:01,932 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-21 20:16:34,968 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 20:16:34,968 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 20:16:34,970 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 20:16:34,970 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 20:16:34,970 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 20:16:34,970 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 20:16:34,986 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 20:16:34,987 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 20:16:34,988 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 20:16:34,989 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 20:16:34,995 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 20:16:34,998 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 20:16:35,022 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 20:16:35,022 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 20:16:35,023 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 20:16:35,023 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 20:16:52,240 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 20:16:52,244 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 20:16:52,268 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 20:16:52,270 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 20:23:41,594 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 20:23:41,598 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 20:23:41,600 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 20:23:44,319 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 20:23:44,322 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 20:23:44,323 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 20:28:34,216 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 20:28:34,217 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 20:28:34,217 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 20:28:34,230 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 20:28:34,234 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 20:28:34,237 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 20:28:34,247 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 20:28:34,248 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 20:28:52,880 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 20:28:52,883 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 20:29:27,934 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 20:29:27,936 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 20:29:27,936 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 20:39:05,456 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99a80>: Format not recognised.
+2026-01-21 20:39:05,463 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:39:05,469 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98ea0>: Format not recognised.
+2026-01-21 20:39:05,474 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99a80>: Format not recognised.
+2026-01-21 20:39:05,479 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99a80>: Format not recognised.
+2026-01-21 20:39:05,483 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98d60>: Format not recognised.
+2026-01-21 20:39:05,488 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:39:05,493 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98ea0>: Format not recognised.
+2026-01-21 20:39:05,497 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98d60>: Format not recognised.
+2026-01-21 20:39:05,500 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:39:05,503 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98ea0>: Format not recognised.
+2026-01-21 20:39:05,507 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98d60>: Format not recognised.
+2026-01-21 20:39:05,510 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:39:05,515 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98ea0>: Format not recognised.
+2026-01-21 20:39:05,520 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98ea0>: Format not recognised.
+2026-01-21 20:39:05,524 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98f40>: Format not recognised.
+2026-01-21 20:39:05,528 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99a80>: Format not recognised.
+2026-01-21 20:39:05,532 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99a80>: Format not recognised.
+2026-01-21 20:39:05,536 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98cc0>: Format not recognised.
+2026-01-21 20:39:05,539 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98ea0>: Format not recognised.
+2026-01-21 20:39:05,543 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98f40>: Format not recognised.
+2026-01-21 20:39:05,548 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98cc0>: Format not recognised.
+2026-01-21 20:39:05,552 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99b20>: Format not recognised.
+2026-01-21 20:39:05,556 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:05,560 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98cc0>: Format not recognised.
+2026-01-21 20:39:05,564 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99b20>: Format not recognised.
+2026-01-21 20:39:05,568 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:05,574 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,003 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98f40>: Format not recognised.
+2026-01-21 20:39:08,149 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x7fed55dd9350>: Format not recognised.
+2026-01-21 20:39:08,162 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98f40>: Format not recognised.
+2026-01-21 20:39:08,166 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99990>: Format not recognised.
+2026-01-21 20:39:08,172 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,178 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98ea0>: Format not recognised.
+2026-01-21 20:39:08,182 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99990>: Format not recognised.
+2026-01-21 20:39:08,187 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,192 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98ea0>: Format not recognised.
+2026-01-21 20:39:08,198 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99990>: Format not recognised.
+2026-01-21 20:39:08,205 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,215 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x7fed55dd9350>: Format not recognised.
+2026-01-21 20:39:08,221 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98f40>: Format not recognised.
+2026-01-21 20:39:08,227 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,232 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99990>: Format not recognised.
+2026-01-21 20:39:08,237 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:39:08,243 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,249 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99990>: Format not recognised.
+2026-01-21 20:39:08,254 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:39:08,260 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,266 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99990>: Format not recognised.
+2026-01-21 20:39:08,272 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:39:08,279 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,285 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99990>: Format not recognised.
+2026-01-21 20:39:08,291 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:39:08,298 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98e00>: Format not recognised.
+2026-01-21 20:39:08,305 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe99990>: Format not recognised.
+2026-01-21 20:39:08,311 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x70cd1fe98fe0>: Format not recognised.
+2026-01-21 20:57:25,040 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 20:57:25,040 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 20:57:25,040 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 20:57:25,056 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 20:57:25,059 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 20:57:25,062 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 20:57:25,071 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 20:57:25,071 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 20:57:38,172 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 20:57:38,174 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 20:57:54,950 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 20:57:54,951 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 20:57:54,951 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 21:03:18,952 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 21:03:18,952 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 21:03:18,953 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 21:03:18,968 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 21:03:18,972 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 21:03:18,983 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 21:03:18,997 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 21:03:18,998 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 21:03:34,343 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 21:03:34,345 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 21:03:48,908 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 21:03:48,909 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 21:03:48,909 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 21:43:43,730 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 21:43:43,731 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 21:43:43,731 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 21:43:43,747 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 21:43:43,750 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 21:43:43,754 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 21:43:43,762 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 21:43:43,762 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 21:43:58,586 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 21:43:58,587 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 21:44:12,730 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 21:44:12,731 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 21:44:12,731 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 21:52:10,922 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x7895d424bab0>: Format not recognised.
+2026-01-21 21:52:10,930 - AI_System - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x7895d424b2e0>: Format not recognised.
+2026-01-21 22:06:01,827 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-21 22:06:01,856 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-21 22:06:01,943 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-21 22:06:01,949 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-21 22:06:31,430 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 22:06:31,430 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 22:06:31,430 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 22:06:31,430 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 22:06:31,430 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 22:06:31,430 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 22:06:31,446 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 22:06:31,447 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 22:06:31,448 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 22:06:31,451 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 22:06:31,454 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 22:06:31,454 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 22:06:31,473 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 22:06:31,473 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 22:06:31,473 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 22:06:31,473 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 22:06:54,317 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 22:06:54,321 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 22:06:54,363 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 22:06:54,367 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 22:13:23,995 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 22:13:23,998 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 22:13:23,999 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 22:13:52,785 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 22:13:52,790 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 22:13:52,791 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 22:29:39,312 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 22:29:39,312 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 22:29:39,312 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 22:29:39,330 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 22:29:39,334 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 22:29:39,337 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 22:29:39,354 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 22:29:39,354 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 22:29:57,202 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 22:29:57,208 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 22:30:32,984 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 22:30:32,985 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 22:30:32,985 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 23:33:45,368 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 23:33:45,369 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 23:33:45,369 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 23:33:45,387 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 23:33:45,391 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 23:33:45,394 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 23:33:45,404 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 23:33:45,404 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 23:33:58,500 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 23:33:58,502 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 23:34:12,139 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 23:34:12,140 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 23:34:12,140 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 23:41:05,876 - VoiceStreamService - ERROR - ❌ Error procesando chunk: name 'time' is not defined
+2026-01-21 23:41:05,896 - AI_System - ERROR - ❌ Error pseudo-streaming: name 'time' is not defined
+2026-01-21 23:41:06,040 - VoiceStreamService - ERROR - ❌ Error procesando chunk: name 'time' is not defined
+2026-01-21 23:41:06,040 - AI_System - ERROR - ❌ Error pseudo-streaming: name 'time' is not defined
+2026-01-21 23:41:06,113 - VoiceStreamService - ERROR - ❌ Error procesando chunk: name 'time' is not defined
+2026-01-21 23:41:06,114 - AI_System - ERROR - ❌ Error pseudo-streaming: name 'time' is not defined
+2026-01-21 23:41:43,999 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 23:41:44,000 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 23:41:44,000 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 23:41:44,024 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 23:41:44,029 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 23:41:44,035 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 23:41:44,056 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 23:41:44,057 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 23:42:01,084 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 23:42:01,086 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 23:42:17,510 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-21 23:42:17,511 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 23:42:17,511 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 23:42:53,293 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-21 23:42:53,316 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-21 23:42:53,412 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-21 23:42:53,419 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-21 23:43:23,040 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 23:43:23,040 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-21 23:43:23,040 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 23:43:23,041 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-21 23:43:23,041 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 23:43:23,041 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-21 23:43:23,057 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 23:43:23,058 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-21 23:43:23,059 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 23:43:23,062 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-21 23:43:23,065 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 23:43:23,065 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-21 23:43:23,082 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 23:43:23,082 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-21 23:43:23,082 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 23:43:23,082 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-21 23:43:40,642 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 23:43:40,648 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 23:43:40,661 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-21 23:43:40,666 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-21 23:46:32,816 - models.tts_processor - ERROR - ❌ Error cargando TTS: [Errno 2] No such file or directory: 'model.pth'
+2026-01-21 23:46:32,818 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 23:46:32,818 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 23:46:32,826 - models.tts_processor - ERROR - ❌ Error cargando TTS: ('Connection broken: IncompleteRead(317430104 bytes read, 1550499014 more expected)', IncompleteRead(317430104 bytes read, 1550499014 more expected))
+2026-01-21 23:46:32,827 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-21 23:46:32,827 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-21 23:52:42,590 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: 'VoiceProcessor' object has no attribute 'transcribe_partial'
+2026-01-21 23:52:42,821 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: 'VoiceProcessor' object has no attribute 'transcribe_partial'
+2026-01-22 00:04:56,279 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-22 00:04:56,278 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-22 00:04:56,407 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-22 00:04:56,408 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-22 00:04:56,414 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-22 00:04:56,414 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-22 00:05:22,605 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 00:05:22,605 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 00:05:22,605 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 00:05:22,605 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 00:05:22,605 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 00:05:22,605 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 00:05:22,620 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 00:05:22,621 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 00:05:22,622 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 00:05:22,624 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 00:05:22,625 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 00:05:22,627 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 00:05:22,633 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 00:05:22,633 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 00:05:22,633 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 00:05:22,633 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 00:05:55,787 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 00:05:55,790 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 00:05:56,173 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 00:05:56,175 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 00:11:23,459 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-22 00:11:23,459 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-22 00:11:23,459 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-22 00:11:35,621 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-22 00:11:35,624 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-22 00:11:35,624 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-22 00:16:22,897 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 00:16:22,897 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 00:16:22,898 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 00:16:22,915 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 00:16:22,919 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 00:16:22,929 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 00:16:22,972 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 00:16:22,973 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 00:16:38,951 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 00:16:38,953 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 00:16:54,519 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-22 00:16:54,520 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-22 00:16:54,520 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-22 00:22:06,252 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 00:22:06,253 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 00:22:06,254 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 00:22:06,277 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 00:22:06,282 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 00:22:06,298 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 00:22:06,358 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 00:22:06,358 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 00:22:22,880 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 00:22:22,883 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 00:23:03,813 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 00:23:03,814 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 00:23:03,814 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 00:23:03,833 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 00:23:03,838 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 00:23:03,842 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 00:23:03,855 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 00:23:03,856 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 00:23:17,482 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 00:23:17,485 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 00:23:33,900 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-22 00:23:33,901 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-22 00:23:33,901 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-22 01:37:40,619 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-22 01:37:40,652 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-22 01:37:40,888 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-22 01:37:40,901 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-22 01:37:41,238 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-22 01:38:18,523 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 01:38:18,524 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 01:38:18,524 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 01:38:18,540 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 01:38:18,543 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 01:38:18,553 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 01:38:18,568 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 01:38:18,568 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 01:38:39,343 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 01:38:39,344 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 01:41:23,679 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-22 01:41:23,681 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-22 01:41:23,682 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-22 01:42:16,469 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71ce845c2200>: Format not recognised.
+2026-01-22 01:42:16,531 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71ce845c1800>: Format not recognised.
+2026-01-22 01:42:16,589 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71ce845c1710>: Format not recognised.
+2026-01-22 01:42:20,704 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71ce845c18a0>: Format not recognised.
+2026-01-22 01:42:20,775 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71ce845c1990>: Format not recognised.
+2026-01-22 01:42:20,829 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71ce845c1580>: Format not recognised.
+2026-01-22 01:42:22,586 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71cee8117a60>: Format not recognised.
+2026-01-22 01:42:22,650 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71ce845c13a0>: Format not recognised.
+2026-01-22 01:42:22,700 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x71ce845c16c0>: Format not recognised.
+2026-01-22 08:39:00,729 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 08:39:00,729 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 08:39:00,730 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 08:39:00,748 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 08:39:00,752 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 08:39:00,755 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 08:39:00,765 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 08:39:00,765 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 08:39:11,995 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 08:39:11,997 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 08:39:26,032 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-22 08:39:26,033 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-22 08:39:26,033 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-22 09:02:50,593 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x7e5060056930>: Format not recognised.
+2026-01-22 09:02:50,655 - VoiceStreamService - ERROR - ❌ Error pseudo-streaming: Error opening <_io.BytesIO object at 0x7e500ca31710>: Format not recognised.
+2026-01-22 09:47:56,835 - AI_System - ERROR - ❌ Excepción no manejada: 'utf-8' codec can't decode byte 0xa0 in position 137: invalid start byte
+2026-01-22 10:05:00,963 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-22 10:05:01,190 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-22 10:05:01,204 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-22 10:05:33,795 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 10:05:33,795 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 10:05:33,795 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 10:05:33,811 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 10:05:33,814 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 10:05:33,818 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 10:05:33,824 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 10:05:33,824 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 10:05:45,161 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 10:05:45,163 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 10:08:10,241 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-22 10:08:10,241 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-22 10:08:10,242 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-22 10:09:34,513 - AI_System - ERROR - ❌ Excepción no manejada: 'utf-8' codec can't decode byte 0x80 in position 156: invalid start byte
+2026-01-22 10:33:34,194 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-22 10:33:34,348 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-22 10:33:34,373 - utils.service_client - INFO - 🔌 ServiceClient cerrado
+2026-01-22 10:34:04,582 - AI_System - INFO - 🚀 Iniciando Sistema...
+2026-01-22 10:34:04,583 - utils.device_manager - INFO - ✅ GPU Detectada y Optimizada: NVIDIA GeForce RTX 4080 SUPER (15.99 GB VRAM)
+2026-01-22 10:34:04,583 - utils.device_manager - INFO - 🚀 Modo de alto rendimiento activado (cuDNN benchmark)
+2026-01-22 10:34:04,599 - database.database - INFO - ✅ Base de datos inicializada con esquema avanzado
+2026-01-22 10:34:04,603 - models.recommendation_model - INFO - 🔄 Cargando motor de recomendación...
+2026-01-22 10:34:04,606 - models.recommendation_model - INFO - ✅ Modelo LightFM cargado correctamente.
+2026-01-22 10:34:04,613 - models.recommendation_model - INFO - ✅ Catálogo de películas cargado (29 items).
+2026-01-22 10:34:04,613 - models.voice_processor - INFO - 🎙️ Cargando Whisper medium en CUDA
+2026-01-22 10:34:15,961 - models.voice_processor - INFO - ✅ Whisper cargado
+2026-01-22 10:34:15,963 - models.tts_processor - INFO - 🗣️ Cargando TTS (XTTS v2) en CUDA...
+2026-01-22 10:36:32,328 - models.tts_processor - INFO - ✅ TTS Cargado correctamente.
+2026-01-22 10:36:32,328 - AI_System - INFO - ✅ RecommendationService orquestador inicializado
+2026-01-22 10:36:32,328 - AI_System - INFO - ✅ VoiceStreamService inicializado
+2026-01-22 11:05:13,534 - AI_System - ERROR - ❌ Excepción no manejada: 'utf-8' codec can't decode byte 0x80 in position 156: invalid start byte
+2026-01-22 12:31:48,043 - AI_System - INFO - 🛑 Cerrando servicios del sistema de IA...
+2026-01-22 12:31:48,416 - utils.service_client - INFO - ✅ ServiceClient inicializado
+2026-01-22 12:31:48,450 - utils.service_client - INFO - 🔌 ServiceClient cerrado

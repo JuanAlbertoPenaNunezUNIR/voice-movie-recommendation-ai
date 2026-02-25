@@ -1,0 +1,39 @@
+# Dependencias específicas del servicio de NLP
+
+# Framework web
+fastapi==0.123.10
+uvicorn==0.38.0
+pydantic==2.12.5
+python-multipart==0.0.20
+
+# Procesamiento de lenguaje natural
+transformers==4.55.2
+tokenizers==0.21.4
+sentence-transformers==5.1.2
+
+# Spacy + modelo español
+spacy==3.8.11
+https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0.tar.gz#egg=es_core_news_sm
+
+# Utilidades
+# NumPy compatible con TTS 0.22.0 y PyTorch 2.5.1
+numpy>=1.24.3
+
+# Procesamiento de audio
+soundfile==0.12.1
+
+# Optimización de rendimiento y GPU acceleration
+accelerate==0.25.0
+
+# Cache, APIs externas y utilidades
+redis==7.1.0
+requests==2.32.5
+aiohttp==3.13.2
+python-dotenv==1.2.1
+tenacity==9.1.2
+
+# Cortafuegos para evitar problemas de instalación
+# Evitar Cython 3 (rompe PyAV)
+Cython<3
+# Evitar builds de setuptools nuevos
+setuptools<70

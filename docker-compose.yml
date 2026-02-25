@@ -1,0 +1,148 @@
+# ============================================
+# Arquitectura de Microservicios Optimizada
+# Sistema de Recomendación de Películas por Voz con IA
+# ============================================
+
+services:
+  # Servicio del frontend - Interfaz de usuario con Streamlit
+  frontend:
+    build: ./frontend
+    container_name: movie_frontend
+    ports:
+      - "8501:8501" # Exponer puerto 8501 para coincidir con localhost:8501
+    depends_on:
+      backend:
+        condition: service_healthy # Espera a que el backend responda OK
+    environment:
+      # BACKEND_URL es para llamadas internas (no se usa en Streamlit)
+      - BACKEND_URL=http://backend:8000
+    volumes:
+    - ./frontend:/app
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
+    networks:
+      - recommendation-network # Red de la aplicación
+
+  backend:
+    build: ./backend
+    container_name: movie_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./recommendation.db
+      - TMDB_API_KEY=${TMDB_API_KEY}
+      - WHISPER_MODEL=base
+      - COQUI_TOS_AGREED=1
+      - NLP_SERVICE_URL=http://nlp_service:8001
+      - OLLAMA_URL=http://ollama:11434/api/chat
+      - OLLAMA_MODEL=llama3.1
+    volumes:
+      - ./backend:/app # Mapea la carpeta local del backend al contenedor
+      - ./backend/voice_clones:/app/voice_clones
+      - model-cache:/root/.cache
+    depends_on:
+      ollama:
+        condition: service_started
+    dns: # Fix crítico: Fuerza DNS de Google para resolver coqui.gateway.scarf.sh
+      - 8.8.8.8
+      - 1.1.1.1
+    networks:
+      - recommendation-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 20s
+      retries: 15
+      start_period: 15m
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    
+  # Servicio de Procesamiento de Lenguaje Natural (NLP) especializado
+  nlp_service:
+    build: ./nlp_service
+    container_name: movie_nlp
+    ports:
+      - "8001:8001" # Exponer servicio NLP
+    networks:
+      - recommendation-network # Red de la aplicación
+    volumes:
+      - ./nlp_service:/app # Sincroniza tu código en tiempo real
+      - model-cache:/root/.cache # Guarda los modelos descargados (Whisper/BERT) para no bajarlos siempre
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"] # Usar /health para esperar a que los modelos estén cargados
+      interval: 30s
+      timeout: 20s
+      retries: 15
+      start_period: 20m
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  # Redis para caché y sesiones para mejorar el rendimiento
+  redis:
+    image: redis:alpine # Imagen oficial de Redis
+    container_name: movie_redis
+    networks:
+      - recommendation-network # Red de la aplicación
+    
+  # Servicio LLM Local (Ollama) - El "Cerebro" Agéntico
+  ollama:
+    image: ollama/ollama:latest
+    container_name: movie_ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - recommendation-network
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  # Servicio para inicializar Ollama y descargar el modelo llama3.1
+  ollama_init:
+    image: ollama/ollama:latest
+    container_name: ollama_init
+    depends_on:
+      - ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    entrypoint: >
+      sh -c "
+      ollama serve &
+      sleep 8 &&
+      ollama pull llama3.1 &&
+      curl -X POST http://localhost:11434/api/chat \
+        -H 'Content-Type: application/json' \
+        -d '{
+          \"model\": \"llama3.1\",
+          \"messages\": [
+            {\"role\": \"user\", \"content\": \"hola\"}
+          ]
+        }'
+      "
+    restart: "no"
+    networks:
+      - recommendation-network
+
+
+# Volúmenes para persistencia de datos
+volumes:
+  model-cache: # Volumen compartido para no descargar modelos en cada reinicio
+  ollama_data: # Persistencia de modelos LLM
+# Redes para comunicación entre servicios
+networks:
+  recommendation-network:
+    driver: bridge # Tipo de red bridge para comunicación interna
