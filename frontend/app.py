@@ -611,7 +611,7 @@ with tab_cloning:
             st.warning(f"⚠️ Archivo demasiado grande ({size_mb:.1f} MB). Máximo permitido: {MAX_FILE_MB} MB.")
             v_file = None  # Reseteamos para evitar enviarlo
 
-    if v_name and v_file and st.button("Crear Voz", type="primary"):
+    if v_name and v_file and st.button("Clonar Voz", type="primary"):
         with st.spinner("Entrenando la voz, esto puede tardar unos segundos..."):
             try:
                 # Detectamos el tipo MIME correcto según la extensión del archivo
