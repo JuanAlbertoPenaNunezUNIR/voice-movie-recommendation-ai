@@ -7,76 +7,52 @@ OLLAMA_URL = "http://ollama:11434/api/chat"
 MODEL = "llama3.1"
 
 SYSTEM_PROMPT = """
-Eres un motor de extracción de entidades para una API de cine.
-Tu objetivo es convertir la petición del usuario en un JSON de filtros estricto para TMDB.
-
-IMPORTANTE: Mapea términos coloquiales a géneros oficiales de TMDB: Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Family, Fantasy, History, Horror, Music, Mystery, Romance, Science Fiction, TV Movie, Thriller, War, Western.
+Tu única función es convertir la petición de un usuario sobre películas en un objeto JSON.
+Analiza el texto y rellena los campos del JSON según las siguientes reglas.
+Debes devolver SIEMPRE un JSON válido, incluso si la petición es ambigua. Si no puedes extraer un filtro, deja su valor por defecto.
 
 FECHA ACTUAL: {date_context}
 
-INSTRUCCIONES DE EXTRACCIÓN:
-
-1. INTENT ("intent"):
-   - "recommend_movies": Peticiones de cine.
-   - "greeting": Saludos ("Hola", "Soy Juan").
-   - "other": Otros temas.
-
-2. FILTROS ("filters"):
-   - "genres": Traduce siempre al inglés.
-     * "miedo/terror" -> "Horror"
-     * "ciencia ficción" -> "Science Fiction"
-     * "policiaca" -> "Crime"
-     * "bélica" -> "War"
-   
-   - "director": EXTRAE nombres tras "dirigida por", "de [Director]", "películas de [Director]".
-   - "actors": EXTRAE nombres tras "con", "protagonizada por", "sale".
-   
-   - "year_min" / "year_max":
-     * "años 80" -> 1980, 1989
-     * "noventas" -> 1990, 1999
-     * "clásicas" -> 1900, 1980
-     * "recientes" -> {current_year}-5, {current_year}
-   
-   - "sort_by":
-     * "mejores", "top", "ranking", "historia", "obra maestra" -> "vote_average.desc"
-     * "populares" -> "popularity.desc"
-     * "nuevas" -> "primary_release_date.desc"
-   
-   - "similar_to": Título de película referencia ("tipo Matrix", "como Alien").
-   
-   - "limit": Cantidad ("una película" -> 1).
-
-3. RESPUESTA ("response"):
-   - Genera una frase de transición NEUTRA: "Buscando películas...", "Consultando filmografía...".
-   - NO digas que no has encontrado nada. NO inventes títulos.
+REGLAS DE EXTRACCIÓN:
+- "intent": "recommend_movies" para peticiones de cine, "greeting" para saludos. Si no es ninguna, "other".
+- "filters":
+  - "genres": Mapea géneros a su término en Inglés (ej: 'ciencia ficción' -> 'Science Fiction', 'terror' -> 'Horror', 'comedia' o 'de risa' -> 'Comedy').
+  - "director": Extrae el nombre del director (ej: 'de Christopher Nolan' -> 'Christopher Nolan').
+  - "actors": Extrae nombres de actores.
+  - "year_min", "year_max": Extrae rangos de años (ej: 'años 80' -> 1980, 1989; 'recientes' -> {current_year}-5, {current_year}).
+  - "sort_by": Usa 'vote_average.desc' si pide 'mejores' o 'top'. Usa 'primary_release_date.desc' si pide 'nuevas'. Por defecto, 'popularity.desc'.
+  - "similar_to": Extrae el título de la película de referencia (ej: 'tipo Scary Movie' -> 'Scary Movie').
+  - "keywords": Extrae subgéneros o conceptos (ej: 'humor absurdo', 'parodia', 'zombies'). Si usas 'similar_to', intenta inferir los keywords de esa película.
+  - "limit": Extrae la cantidad (ej: 'una película' -> 1).
 
 EJEMPLOS:
-- "Mejores películas de ciencia ficción de la historia"
-  -> {{"intent": "recommend_movies", "filters": {{"genres": ["Science Fiction"], "sort_by": "vote_average.desc", "year_min": null}}}}
+- Usuario: "Mejores películas de ciencia ficción de la historia"
+  JSON: {{"intent": "recommend_movies", "filters": {{"genres": ["Science Fiction"], "sort_by": "vote_average.desc"}}}}
+- Usuario: "¿Cuáles son las mejores películas de Christopher Nolan?"
+  JSON: {{"intent": "recommend_movies", "filters": {{"director": "Christopher Nolan", "sort_by": "vote_average.desc"}}}}
+- Usuario: "Recomiéndame película de risa tipo Scary Movie."
+  JSON: {{"intent": "recommend_movies", "filters": {{"genres": ["Comedy"], "similar_to": "Scary Movie", "keywords": ["parody", "spoof"]}}}}
+- Usuario: "Clásicos del humor absurdo"
+  JSON: {{"intent": "recommend_movies", "filters": {{"genres": ["Comedy"], "keywords": ["absurd humor"], "sort_by": "vote_average.desc"}}}}
 
-- "Dime la mejor película dirigida por Christopher Nolan"
-  -> {{"intent": "recommend_movies", "filters": {{"director": "Christopher Nolan", "sort_by": "vote_average.desc", "limit": 1}}}}
-
-- "Película de los 80 tipo Blade Runner"
-  -> {{"intent": "recommend_movies", "filters": {{"year_min": 1980, "year_max": 1989, "similar_to": "Blade Runner", "genres": ["Science Fiction"]}}}}
-
-JSON SCHEME:
+ESQUEMA JSON (obligatorio):
 {
   "intent": "recommend_movies | greeting | other",
   "detected_name": null,
   "filters": {
     "genres": [],
-    "keywords": [], 
     "actors": [],
     "director": null,
+    "keywords": [],
     "sort_by": "popularity.desc",
     "year_min": null,
     "year_max": null,
-    "similar_to": null, 
+    "similar_to": null,
     "limit": 5
-  },
-  "response": "Buscando..."
+  }
 }
+
+Ahora, procesa la siguiente petición del usuario y devuelve SÓLO el objeto JSON.
 """
 
 def extract_name(text: str):
@@ -139,7 +115,7 @@ def run_llm_agent(user_text: str):
         data = json.loads(content)
     except json.JSONDecodeError:
         # Fallback si el LLM no devuelve JSON puro
-        return {"intent": "other", "response": content, "filters": {}}
+        return {"intent": "other", "response": "Lo siento, no he podido entender tu petición. ¿Puedes reformularla?", "filters": {}}
 
     # --- LÓGICA DE RESCATE DE NOMBRE ---
     # Si el LLM dice que es un saludo pero olvidó rellenar 'detected_name' en el JSON
@@ -187,10 +163,11 @@ Tu objetivo es presentar las recomendaciones de películas al usuario de forma f
 
 Instrucciones CLAVE:
 1. **RESPUESTA MUY BREVE.** La respuesta final NO DEBE SUPERAR los 240 caracteres para que el motor de voz la procese rápido.
-2. Menciona los títulos de las películas de forma fluida, no como una lista.
-3. Si hay 3 películas o menos, menciónalas todas. Si hay más, puedes decir "He encontrado varias opciones como..." y mencionar las dos primeras.
-4. Basa tus comentarios únicamente en el título, año y director. NO inventes detalles.
-5. Tono entusiasta y directo.
+2. **CRÍTICO: Tu respuesta DEBE OBLIGATORIAMENTE mencionar los títulos de la sección 'Películas encontradas'. NO menciones ninguna otra película que no esté en esa lista.**
+3. Menciona los títulos de las películas de forma fluida, no como una lista.
+4. Si hay 3 películas o menos, menciónalas todas. Si hay más, puedes decir "He encontrado varias opciones como..." y mencionar las dos primeras.
+5. Basa tus comentarios únicamente en el título, año y director. NO inventes detalles.
+6. Tono entusiasta y directo.
 {personalization_instruction}
 
 Ejemplo de respuesta CORTA y válida:
