@@ -210,8 +210,8 @@ class TMDBService:
 
         # Géneros
         if genres:
-            genre_list = await self.get_genres_list()
-            genre_ids = [str(genre_list[g.lower()]) for g in genres if g.lower() in genre_list]
+            genre_list_en = await self.get_genres_list(lang="en-US")
+            genre_ids = [str(genre_list_en[g.lower()]) for g in genres if g.lower() in genre_list_en]
             if genre_ids:
                 params["with_genres"] = ",".join(genre_ids)
 
@@ -250,8 +250,8 @@ class TMDBService:
                 if k_id: k_ids.append(str(k_id))
 
             if k_ids:
-                # Usamos OR (|) para ser más flexibles, o AND (,) si queremos precisión
-                params["with_keywords"] = "|".join(k_ids)
+                # Usamos AND (,) para ser más precisos y requerir todos los keywords.
+                params["with_keywords"] = ",".join(k_ids)
 
         # --- CACHE CHECK (Advanced) ---
         # Creamos una key única basada en los parámetros ordenados
@@ -294,6 +294,47 @@ class TMDBService:
             
         return result
 
+    async def get_similar_movies(self, movie_id: int, page: int = 1) -> Dict[str, Any]:
+        """Obtiene películas similares a una película dada por su ID."""
+        await self.initialize()
+        url = f"{self.base_url}/movie/{movie_id}/similar"
+        params = {"api_key": self.api_key, "language": "es-ES", "page": page}
+        
+        # --- CACHE CHECK ---
+        cache_key = f"tmdb:similar:{movie_id}:{page}"
+        if self.cache:
+            cached = await self.cache.get(cache_key)
+            if cached:
+                logger.info(f"⚡ Cache hit (similar): {movie_id}")
+                return json.loads(cached)
+
+        async with self.session.get(url, params=params) as resp:
+            if resp.status != 200:
+                logger.error(f"Error obteniendo similares para movie_id {movie_id}: {resp.status}")
+                return {"results": []}
+            data = await resp.json()
+
+        # The similar endpoint returns basic movie objects. I need to enrich them.
+        enriched = []
+        today = datetime.now().strftime("%Y-%m-%d")
+        for movie in data.get("results", [])[:15]: # Limit enrichment
+            # Filtro de seguridad para no incluir películas futuras que TMDB pueda sugerir
+            r_date = movie.get("release_date")
+            if not r_date or r_date > today:
+                continue
+
+            detail = await self.get_movie_details(movie["id"])
+            if detail:
+                enriched.append(detail)
+        
+        result = {"results": enriched}
+
+        # --- CACHE SET (24 horas) ---
+        if self.cache and enriched:
+            await self.cache.setex(cache_key, 86400, json.dumps(result))
+            
+        return result
+
     async def get_movie_details(self, movie_id: int) -> Optional[Dict[str, Any]]:
         await self.initialize()
         url = f"{self.base_url}/movie/{movie_id}"
@@ -333,13 +374,14 @@ class TMDBService:
         
         # Géneros (Nuevo - nombres reales)
         enriched["genres"] = [g["name"] for g in movie_data.get("genres", [])]
+        enriched["genre_ids"] = [g["id"] for g in movie_data.get("genres", [])]
         
         return enriched
 
-    async def get_genres_list(self) -> Dict[str, int]:
+    async def get_genres_list(self, lang: str = "es-ES") -> Dict[str, int]:
         await self.initialize()
         url = f"{self.base_url}/genre/movie/list"
-        params = {"api_key": self.api_key, "language": "es-ES"}
+        params = {"api_key": self.api_key, "language": lang}
         async with self.session.get(url, params=params) as resp:
             if resp.status != 200:
                 return {}
