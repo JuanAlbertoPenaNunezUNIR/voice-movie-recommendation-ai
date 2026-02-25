@@ -40,11 +40,12 @@ class RecommendationService:
                 except:
                     continue # Si no tiene año y pedimos año, fuera.
 
-            # 2. Filtro de Género (Loose match: si la peli tiene AL MENOS uno de los pedidos)
+            # 2. Filtro de Género (STRICT match: si la peli tiene TODOS los géneros pedidos)
             if f_genres:
                 m_genres = [g.lower() for g in m.get("genres", [])]
                 if not m_genres: continue
-                if not any(g in m_genres for g in f_genres):
+                # Cambiamos a 'all' para que la película deba tener TODOS los géneros solicitados.
+                if not all(g in m_genres for g in f_genres):
                     continue
 
             # 3. Filtro de Director (Si tenemos el dato en la respuesta de TMDB)
