@@ -199,8 +199,8 @@ class TMDBService:
             if actors or directors:
                 params["vote_count.gte"] = 100
             elif genres or years:
-                # Si hay géneros o años específicos, umbral intermedio para no ser tan restrictivos
-                params["vote_count.gte"] = 300
+                # Umbral más bajo para búsquedas con filtros, para no perder joyas menos conocidas.
+                params["vote_count.gte"] = 150
             else:
                 # "Mejores de la historia" genérico -> Umbral MUY ALTO para garantizar clásicos universales
                 # Bajamos a 1000 para permitir combinaciones de géneros (ej: Sci-Fi + Terror) que tengan clásicos con menos votos masivos
