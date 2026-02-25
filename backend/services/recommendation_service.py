@@ -20,6 +20,42 @@ class RecommendationService:
         """Fuerza la recarga del modelo semántico en el nuevo hardware."""
         self.semantic_matcher.initialize()
 
+    def _filter_results(self, movies: List[Dict], filters: Dict) -> List[Dict]:
+        """Aplica filtros duros en memoria para limpiar resultados de búsqueda textual/híbrida."""
+        filtered = []
+        
+        # Preparar filtros
+        f_genres = [g.lower() for g in filters.get("genres", [])]
+        f_year_min = filters.get("year_min")
+        f_year_max = filters.get("year_max")
+        f_director = filters.get("director")
+        
+        for m in movies:
+            # 1. Filtro de Año
+            if f_year_min or f_year_max:
+                try:
+                    y = int(m.get("release_year", 0))
+                    if f_year_min and y < int(f_year_min): continue
+                    if f_year_max and y > int(f_year_max): continue
+                except:
+                    continue # Si no tiene año y pedimos año, fuera.
+
+            # 2. Filtro de Género (Loose match: si la peli tiene AL MENOS uno de los pedidos)
+            if f_genres:
+                m_genres = [g.lower() for g in m.get("genres", [])]
+                if not m_genres: continue
+                if not any(g in m_genres for g in f_genres):
+                    continue
+
+            # 3. Filtro de Director (Si tenemos el dato en la respuesta de TMDB)
+            if f_director:
+                m_directors = [d.lower() for d in m.get("directors", [])]
+                if not any(f_director.lower() in d for d in m_directors):
+                    continue
+
+            filtered.append(m)
+        return filtered
+
     async def get_enriched_recommendations(
         self,
         user_id: str,
@@ -85,7 +121,11 @@ class RecommendationService:
             
             # A. Búsqueda Textual (Search API)
             text_movies = []
-            if semantic_query:
+            # Solo buscamos por texto si hay una película de referencia explícita ("similar_to")
+            # O si NO hay filtros específicos (búsqueda abierta por keyword/título)
+            should_text_search = bool(preferences.get("similar_to")) or not has_specific_filters
+            
+            if should_text_search and semantic_query:
                 text_results_data = await self.tmdb_service.search_movies_by_query(semantic_query)
                 text_movies = text_results_data.get("results", [])
 
@@ -121,7 +161,10 @@ class RecommendationService:
                         final_list.append(m)
                         seen_ids.add(m["tmdb_id"])
             
-            movies = final_list
+            # --- FILTRADO ESTRICTO ---
+            # Aplicamos los filtros duros a la lista combinada para eliminar ruido
+            # (ej: Blade Runner 2049 en búsqueda de los 80, o documentales en búsqueda de director)
+            movies = self._filter_results(final_list, preferences)
 
             if text_movies:
                 match_type = "exact"
