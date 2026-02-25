@@ -172,11 +172,8 @@ def generate_recommendation_response(user_text: str, movies: list, initial_respo
     for m in movies:
         title = m.get("title", "Película")
         year = m.get("release_year", "")
-        director = ", ".join(m.get("directors", ["Desconocido"]))
-        cast = ", ".join([c["name"] for c in m.get("main_cast", [])])
-        genres = ", ".join(m.get("genres", []))
-        overview = m.get("overview", "Sin descripción disponible.")
-        movies_ctx.append(f"- Título: {title} ({year})\n  Director: {director}\n  Reparto: {cast}\n  Géneros: {genres}\n  Sinopsis Real: {overview}\n")
+        director = ", ".join(m.get("directors", []))
+        movies_ctx.append(f"- Título: {title} ({year}), dirigida por {director if director else 'un director desconocido'}.")
     movies_str = "\n".join(movies_ctx)
 
     today = datetime.now().strftime("%Y-%m-%d")
@@ -187,19 +184,17 @@ def generate_recommendation_response(user_text: str, movies: list, initial_respo
 
     system_prompt = f"""Eres un asistente de cine experto y carismático.
 Tu objetivo es presentar las recomendaciones de películas al usuario de forma fluida y natural.
-FECHA ACTUAL: {today}
 
-Instrucciones:
-1. Integra los títulos de las películas en tu respuesta.
-2. NO hagas una lista esquemática ni uses "Te sugiero:" repetitivamente.
-3. Puedes añadir breves comentarios, curiosidades o adjetivos sobre las películas para hacerlas atractivas.
-4. Mantén la respuesta concisa (máximo 3-4 frases).
-5. El tono debe ser entusiasta y personalizado.
-6. Menciona explícitamente la cantidad de películas encontradas (ej: "He encontrado 3 películas...", "Aquí tienes esta recomendación...").
-7. CRÍTICO: Usa EXCLUSIVAMENTE la información proporcionada (Sinopsis Real, Director, Reparto) para describir la película. NO inventes tramas ni mezcles datos de otras películas.
-8. Si la búsqueda ha fallado y las películas no tienen nada que ver con lo pedido, DILO: "No he encontrado exactamente lo que buscabas, pero estas son populares...".
-9. IMPORTANTE: Si hay 5 películas o menos en la lista, MENCIONA TODAS por su título. No omitas ninguna.
+Instrucciones CLAVE:
+1. **RESPUESTA MUY BREVE.** La respuesta final NO DEBE SUPERAR los 240 caracteres para que el motor de voz la procese rápido.
+2. Menciona los títulos de las películas de forma fluida, no como una lista.
+3. Si hay 3 películas o menos, menciónalas todas. Si hay más, puedes decir "He encontrado varias opciones como..." y mencionar las dos primeras.
+4. Basa tus comentarios únicamente en el título, año y director. NO inventes detalles.
+5. Tono entusiasta y directo.
 {personalization_instruction}
+
+Ejemplo de respuesta CORTA y válida:
+"¡Claro, Alberto! Para los 80, te recomiendo 'Aliens: El regreso' de James Cameron y 'La Cosa' de John Carpenter. ¡Dos clásicos que no te puedes perder!"
 """
 
     user_prompt = f"""
