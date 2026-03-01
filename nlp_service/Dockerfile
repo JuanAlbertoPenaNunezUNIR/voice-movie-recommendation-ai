@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     git \
     curl \
+    build-essential \
+    gcc \
     && rm -rf /var/lib/apt/lists/*
 
 # Establecer python3.10 como el por defecto
@@ -23,16 +25,14 @@ WORKDIR /app
 # Copiar requirements primero para cachear dependencias
 COPY requirements.txt .
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
-# Instalar PyTorch con soporte CUDA y luego el resto de dependencias
-RUN python3 -m pip install --upgrade pip && \
-    python3 -m pip install torch==2.5.1 torchaudio==2.5.1 \
+# Instalar PyTorch con soporte CUDA y componentes adicionales
+RUN python3 -m pip install torch==2.5.1 torchaudio==2.5.1 \
       --index-url https://download.pytorch.org/whl/cu121 && \
     python3 -m pip install --no-cache-dir \
       "faster-whisper>=1.0.0" \
-      "av>=12.0.0,<17.0.0" && \
-    python3 -m pip install --no-cache-dir -r requirements.txt
+      "av>=12.0.0,<17.0.0" \
+    && python3 -m pip install --no-cache-dir -r requirements.txt
 
 # Copiar código de la aplicación (excluye archivos de .dockerignore)
 COPY . .

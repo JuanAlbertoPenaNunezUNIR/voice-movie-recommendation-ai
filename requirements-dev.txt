@@ -1,0 +1,13 @@
+# Dependencias exclusivas para desarrollo y testing
+# Usar: pip install -r requirements.txt -r requirements-dev.txt
+
+# Testing
+pytest==9.0.1
+pytest-asyncio==1.3.0
+
+# Code formatting y linting
+black==25.11.0
+flake8==7.3.0
+
+# Type checking
+mypy==1.8.0

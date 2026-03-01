@@ -16,14 +16,10 @@ spacy==3.8.11
 https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0.tar.gz#egg=es_core_news_sm
 
 # Utilidades
-# NumPy compatible con TTS 0.22.0 y PyTorch 2.5.1
-numpy>=1.24.3
+numpy==1.26.4
 
 # Procesamiento de audio
 soundfile==0.12.1
-
-# Optimización de rendimiento y GPU acceleration
-accelerate==0.25.0
 
 # Cache, APIs externas y utilidades
 redis==7.1.0

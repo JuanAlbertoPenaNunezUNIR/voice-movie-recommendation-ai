@@ -38,8 +38,7 @@ RUN python3.11 -m pip install \
     torchaudio==2.2.2 \
     --index-url https://download.pytorch.org/whl/cu121
 
-# Instalar transformers compatible ANTES
-RUN python3.11 -m pip install transformers==4.35.2
+# Transformers será instalado junto con el resto de dependencias en requirements.txt
 
 # Instalar Coqui SIN resolver deps
 RUN python3.11 -m pip install TTS==0.22.0 --no-deps

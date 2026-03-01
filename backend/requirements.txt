@@ -2,48 +2,35 @@
 
 # Framework web y API
 fastapi==0.123.10
-uvicorn[standard]==0.38.0  # [standard] para mejor rendimiento
-python-multipart==0.0.20
+uvicorn[standard]==0.38.0
 python-multipart==0.0.20
 httpx==0.28.1
 requests==2.32.5
 
-numpy<2.0
+numpy==1.26.4
 
 # Audio/STT
 faster-whisper==1.0.3
 ctranslate2==4.4.0
-soundfile==0.12.1
+soundfile==0.13.1
 pydub==0.25.1
-librosa==0.10.2.post1
 
 # TTS (XTTS v2)
 TTS==0.22.0
-transformers==4.35.2
+transformers==4.55.2
 torch==2.2.2
-torchaudio==2.2.2
 
 # Machine Learning y recomendación
 lightfm @ git+https://github.com/lyst/lightfm.git
-
-# NLP/utilidades
-spacy==3.8.11
-python-dotenv==1.2.1
-tenacity==9.1.2
-
-# NLP / Embeddings
-sentence-transformers==2.2.2
-huggingface_hub==0.16.4
-
-# Recomendación
 scipy==1.11.4
 scikit-learn==1.4.2
 pandas==1.5.3
-joblib==1.5.2
 
-# Redis / DB
+# NLP/Embeddings
+spacy==3.8.11
+python-dotenv==1.2.1
+tenacity==9.1.2
+sentence-transformers==5.1.2
+
+# Caching
 redis==5.0.1
-sqlalchemy==2.0.44
-
-# Monitoreo del sistema y gestión de procesos
-psutil==5.9.8

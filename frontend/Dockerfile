@@ -4,6 +4,12 @@ FROM python:3.11-slim
 # Establecer directorio de trabajo
 WORKDIR /app
 
+# Instalar herramientas necesarias para compilar dependencias científicas si las ruedas no están disponibles
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        gcc \
+    && rm -rf /var/lib/apt/lists/*
+
 # Copiar dependencias e instalar dependencias de Python
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
