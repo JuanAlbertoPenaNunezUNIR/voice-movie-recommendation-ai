@@ -21,7 +21,6 @@ transformers==4.55.2
 torch==2.2.2
 
 # Machine Learning y recomendación
-lightfm @ git+https://github.com/lyst/lightfm.git
 scipy==1.11.4
 scikit-learn==1.4.2
 pandas==1.5.3
