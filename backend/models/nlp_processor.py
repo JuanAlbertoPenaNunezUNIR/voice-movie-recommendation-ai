@@ -1,9 +1,7 @@
 # Procesador de lenguaje natural avanzado para análisis conversacional profundo
 # Cliente NLP que conecta con el Agente LLM (nlp_service)
 
-import torch
 import re
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import asyncio
 from utils.device_manager import device_manager  # Usamos el gestor centralizado
 import os
@@ -16,8 +14,6 @@ class NLPProcessor:
 
     def __init__(self):
         self.model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-        self.tokenizer = None
-        self.model = None
         
         # Mapeo de géneros en español a términos estándar (inglés o IDs para TMDB)
         self.genre_map = {
@@ -43,13 +39,6 @@ class NLPProcessor:
 
     def classify_intent(self, text: str) -> str:
         """ [LEGACY] Clasificación local desactivada """
-        # Usamos device_manager para saber dónde poner los tensores de entrada
-        # device = device_manager.get_device_str()
-        # inputs = self.tokenizer(text, return_tensors="pt", truncation=True).to(device)
-        # with torch.no_grad():
-        #     outputs = self.model(**inputs)
-        #     idx = torch.argmax(outputs.logits, dim=1).item()
-        # return self.intents[idx]
         return "other"
     
     def extract_name(self, text: str) -> str:

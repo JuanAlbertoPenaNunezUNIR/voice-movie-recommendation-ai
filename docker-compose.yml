@@ -42,6 +42,10 @@ services:
     depends_on:
       ollama:
         condition: service_started
+      ollama_init:
+        condition: service_completed_successfully
+      nlp_service:
+        condition: service_healthy
     dns: # Fix crítico: Fuerza DNS de Google para resolver coqui.gateway.scarf.sh
       - 8.8.8.8
       - 1.1.1.1
@@ -69,8 +73,11 @@ services:
       - "8001:8001" # Exponer servicio NLP
     networks:
       - recommendation-network # Red de la aplicación
+    environment:
+      - COQUI_TOS_AGREED=1
     volumes:
       - ./nlp_service:/app # Sincroniza tu código en tiempo real
+      - ./backend/voice_clones:/app/voice_clones # COMPARTIR VOCES CLONADAS
       - model-cache:/root/.cache # Guarda los modelos descargados (Whisper/BERT) para no bajarlos siempre
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8001/health"] # Usar /health para esperar a que los modelos estén cargados
@@ -103,6 +110,14 @@ services:
       - ollama_data:/root/.ollama
     networks:
       - recommendation-network
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
     deploy:
       resources:
         reservations:
@@ -116,22 +131,20 @@ services:
     image: ollama/ollama:latest
     container_name: ollama_init
     depends_on:
-      - ollama
+      ollama:
+        condition: service_healthy
+    environment:
+      - OLLAMA_HOST=ollama:11434
     volumes:
       - ollama_data:/root/.ollama
     entrypoint: >
-      sh -c "
-      ollama serve &
-      sleep 8 &&
+      bash -c "
+      echo 'Esperando a que ollama esté listo...'
+      sleep 5 &&
+      echo 'Descargando modelo llama3.1...'
       ollama pull llama3.1 &&
-      curl -X POST http://localhost:11434/api/chat \
-        -H 'Content-Type: application/json' \
-        -d '{
-          \"model\": \"llama3.1\",
-          \"messages\": [
-            {\"role\": \"user\", \"content\": \"hola\"}
-          ]
-        }'
+      echo 'Validando modelo...' &&
+      echo 'Hola' | ollama run llama3.1
       "
     restart: "no"
     networks:

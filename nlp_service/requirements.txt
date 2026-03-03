@@ -2,11 +2,16 @@
 
 # Framework web
 fastapi==0.123.10
-uvicorn==0.38.0
-pydantic==2.12.5
+uvicorn[standard]==0.38.0
 python-multipart==0.0.20
 
 # Procesamiento de lenguaje natural
+requests==2.32.5
+torch==2.2.2
+numpy>=1.22,<1.27
+scipy==1.11.4
+soundfile==0.13.1
+faster-whisper==1.0.3
 transformers==4.55.2
 tokenizers==0.21.4
 sentence-transformers==5.1.2
@@ -15,18 +20,8 @@ sentence-transformers==5.1.2
 spacy==3.8.11
 https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0.tar.gz#egg=es_core_news_sm
 
-# Utilidades
-numpy==1.26.4
-
-# Procesamiento de audio
-soundfile==0.12.1
-
-# Cache, APIs externas y utilidades
-redis==7.1.0
-requests==2.32.5
-aiohttp==3.13.2
-python-dotenv==1.2.1
-tenacity==9.1.2
+# Aceleración GPU y optimización
+accelerate>=0.25.0
 
 # Cortafuegos para evitar problemas de instalación
 # Evitar Cython 3 (rompe PyAV)

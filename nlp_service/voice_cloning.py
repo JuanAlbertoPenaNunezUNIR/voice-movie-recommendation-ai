@@ -55,6 +55,19 @@ class VoiceCloningService:
                 return tts.to(self.device)
             
             self.model = await asyncio.to_thread(_load)
+            # parche para compatibilidad con GPT2InferenceModel (véase
+            # backend/models/tts_processor.py para detalles)
+            try:
+                base_model = getattr(self.model, "model", self.model)
+                if base_model.__class__.__name__ == "GPT2InferenceModel":
+                    if not hasattr(base_model, "generate"):
+                        def _fake_generate(*args, **kwargs):
+                            return base_model(*args, **kwargs)
+                        base_model.generate = _fake_generate  # type: ignore
+                        self.logger.debug("Parche aplicado: agregado método generate a GPT2InferenceModel")
+            except Exception:
+                self.logger.warning("No se pudo parchear GPT2InferenceModel en servicio de clonación")
+
             self.logger.info("✅ Modelo TTS cargado correctamente")
             
         except Exception as e:

@@ -1,6 +1,7 @@
 # Servicio de procesamiento de lenguaje natural (NLP) especializado
 
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
+from fastapi.responses import Response
 from pydantic import BaseModel
 from typing import Dict, List, Any, Optional
 import logging
@@ -14,6 +15,8 @@ import gc
 import re  # Necesario para las expresiones regulares
 import requests
 import json
+import os
+from pathlib import Path
 
 # Importar procesadores NLP
 from transformers import pipeline
@@ -24,9 +27,12 @@ from sentence_transformers import SentenceTransformer
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("NLP_Service")
 
+VOICE_DIR = Path("/app/voice_clones")
+
 class WhisperManager:
     def __init__(self):
         self.model = None
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.load_model()
 
     def load_model(self, device=None):
@@ -70,11 +76,84 @@ class WhisperManager:
 
 whisper_manager = WhisperManager()
 
+class TTSManager:
+    def __init__(self, model_name="tts_models/multilingual/multi-dataset/xtts_v2"):
+        self.model_name = model_name
+        self.model = None
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        
+    def load_model(self, device=None):
+        if device: self.device = device
+        
+        if self.model:
+            del self.model
+            gc.collect()
+            if torch.cuda.is_available(): torch.cuda.empty_cache()
+            
+        logger.info(f"🗣️ Cargando TTS (XTTS v2) en {self.device.upper()}...")
+        try:
+            from TTS.api import TTS
+            self.model = TTS(self.model_name).to(self.device)
+            
+            # Parche para GPT2InferenceModel (Fix crítico de dependencias)
+            try:
+                base_model = getattr(self.model, "model", self.model)
+                if base_model.__class__.__name__ == "GPT2InferenceModel":
+                    if not hasattr(base_model, "generate"):
+                        base_model.generate = base_model.__call__
+                        logger.info("✅ Parche aplicado a GPT2InferenceModel")
+            except Exception as e:
+                logger.warning(f"⚠️ No se pudo parchear modelo: {e}")
+                
+        except Exception as e:
+            logger.error(f"❌ Error cargando TTS: {e}")
+
+    def synthesize(self, text: str, voice_filename: str = "default", language: str = "es") -> Optional[bytes]:
+        if not self.model: self.load_model()
+        
+        try:
+            speaker_wav = None
+            # Buscar en carpeta compartida
+            if voice_filename and voice_filename != "default":
+                # Intentar ruta directa o en carpeta de clones
+                possible_path = VOICE_DIR / voice_filename
+                if possible_path.exists():
+                    speaker_wav = str(possible_path)
+            
+            # Fallback a primera voz disponible si no se encuentra
+            if not speaker_wav:
+                wavs = list(VOICE_DIR.glob("*.wav"))
+                if wavs: speaker_wav = str(wavs[0])
+
+            out_path = f"/tmp/output_{os.getpid()}_{hash(text)}.wav"
+            
+            # Parámetros de generación
+            tts_kwargs = {"temperature": 0.75, "repetition_penalty": 2.0, "speed": 1.0}
+            
+            if speaker_wav:
+                self.model.tts_to_file(text=text, file_path=out_path, speaker_wav=speaker_wav, language=language, **tts_kwargs)
+            else:
+                # Fallback a speaker interno si el modelo lo tiene
+                if hasattr(self.model, "speakers") and self.model.speakers:
+                    self.model.tts_to_file(text=text, file_path=out_path, speaker=self.model.speakers[0], language=language, **tts_kwargs)
+                else:
+                    return None
+
+            with open(out_path, "rb") as f:
+                data = f.read()
+            os.remove(out_path)
+            return data
+        except Exception as e:
+            logger.error(f"❌ Error síntesis TTS: {e}")
+            return None
+
+tts_manager = TTSManager()
+
 # Inicializar aplicación FastAPI
 app = FastAPI(
     title="NLP Service - TFM Sistema de Recomendación",
-    description="Servicio especializado en procesamiento de lenguaje natural para análisis de preferencias",
-    version="1.0.0"
+    description="Microservicio de IA: STT, TTS y NLP",
+    version="2.0.0"
 )
 
 # Modelos de IA cargados
@@ -128,16 +207,8 @@ async def set_device(config: DeviceConfig):
     try:
         # 1. Recargar Whisper
         whisper_manager.load_model(device=config.device)
-
-        # 2. Recargar Sentence Transformer (Para que el ranking semántico use GPU)
-        """ [LEGACY] Ya no cargamos modelos locales pesados en NLP service
-        if nlp_models['sentence_encoder']:
-             logger.info(f"🔄 Recargando SentenceTransformer en {config.device.upper()}...")
-             nlp_models['sentence_encoder'] = SentenceTransformer(
-                'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2',
-                device=config.device
-            )
-        """
+        # 2. Recargar TTS
+        tts_manager.load_model(device=config.device)
 
         return {"status": "ok", "device": config.device}
     except Exception as e:
@@ -149,6 +220,13 @@ class PreferenceExtractionRequest(BaseModel):
     text: str
     conversation_context: Optional[Dict[str, Any]] = None
     user_id: Optional[str] = None
+
+class TTSRequest(BaseModel):
+    text: str
+    voice: str = "default"
+    language: str = "es"
+
+# --- ENDPOINTS DE IA ---
 
 @app.on_event("startup")
 async def startup_event():
@@ -173,6 +251,9 @@ async def load_nlp_models():
     try:
         # Usamos GPU si está disponible por defecto al inicio
         device = "cuda" if torch.cuda.is_available() else "cpu"
+        
+        # Cargar TTS
+        tts_manager.load_model(device=device)
 
         # Procesador SpaCy para español
         """ [LEGACY] Comentado: Delegamos el entendimiento al LLM
@@ -189,6 +270,24 @@ async def load_nlp_models():
     except Exception as e:
         logger.error(f"❌ Error cargando modelos: {e}")
         raise
+
+@app.post("/transcribe")
+async def transcribe_audio(file: UploadFile = File(...)):
+    """Endpoint STT para el backend."""
+    try:
+        content = await file.read()
+        text = await whisper_manager.transcribe_bytes(content)
+        return {"text": text}
+    except Exception as e:
+        logger.error(f"Error STT: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/tts")
+async def generate_speech(req: TTSRequest):
+    """Endpoint TTS para el backend."""
+    audio = tts_manager.synthesize(req.text, req.voice, req.language)
+    if not audio: raise HTTPException(status_code=500, detail="Error generando audio")
+    return Response(content=audio, media_type="audio/wav")
 
 @app.get("/health")
 async def health_check():

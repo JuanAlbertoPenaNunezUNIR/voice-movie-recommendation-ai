@@ -42,6 +42,14 @@ RUN python3.11 -m pip install \
 
 # Instalar Coqui SIN resolver deps
 RUN python3.11 -m pip install TTS==0.22.0 --no-deps
+# Instalar dependencias mínimas que TTS necesita y que instalamos manualmente
+# (evitamos que pip resuelva todo para no provocar conflictos durante build)
+# librosa 0.11.0 es la versión más reciente y funciona con numpy>=1.22.
+RUN python3.11 -m pip install --no-cache-dir librosa==0.11.0
+# Dependencias mínimas necesarias por TTS (coqpit es crítico)
+RUN python3.11 -m pip install --no-cache-dir coqpit pyyaml Unidecode
+# pytorch-lightning es requerido por TTS internamente (trainer module)
+RUN python3.11 -m pip install --no-cache-dir pytorch-lightning inflect
 
 # Crear directorio de trabajo
 WORKDIR /app

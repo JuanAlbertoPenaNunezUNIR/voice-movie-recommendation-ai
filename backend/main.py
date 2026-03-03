@@ -10,16 +10,13 @@ import torch
 from pydub import AudioSegment
 import time
 import platform
+import io
 
 import redis.asyncio as redis
 import requests
 
 # Importar agente LLM
 from services.llm_agent import run_llm_agent, generate_recommendation_response
-
-# Modelos de IA
-from faster_whisper import WhisperModel
-from TTS.api import TTS
 
 # Importar servicios propios
 from services.tmdb_service import TMDBService
@@ -36,9 +33,8 @@ logging.basicConfig(level=logging.INFO)
 VOICE_DIR = "/app/voice_clones"
 os.makedirs(VOICE_DIR, exist_ok=True)
 
-# Variables globales para modelos
-whisper_model = None
-tts = None
+# Configuración de servicios externos
+NLP_SERVICE_URL = os.getenv("NLP_SERVICE_URL", "http://nlp_service:8001")
 redis_client = None
 nlp_processor = NLPProcessor() # Instancia local del procesador NLP
 
@@ -49,42 +45,26 @@ rec_service = RecommendationService(rec_engine, tmdb_service)
 
 # --- GESTIÓN DE MODELOS Y HARDWARE ---
 async def load_models_async():
-    """Recarga TODOS los modelos (Whisper, TTS, NLP, Semántica) en el dispositivo seleccionado."""
-    global whisper_model, tts
-    
+    """Recarga modelos locales y notifica al NLP Service."""
     device = device_manager.get_device_str()
-    compute_type = "float16" if device == "cuda" else "int8"
     
     logger.info(f"🔄 RECARGANDO TODO EL SISTEMA EN: {device.upper()}...")
     device_manager.clear_cache()
     
-    # 1. Recargar Whisper
+    # 1. Notificar a NLP Service para que mueva sus modelos
     try:
-        whisper_model = WhisperModel("medium", device=device, compute_type=compute_type)
-        logger.info(f"✅ Whisper activo en {device}")
+        requests.post(f"{NLP_SERVICE_URL}/system/set-device", json={"device": device}, timeout=5)
     except Exception as e:
-        logger.error(f"❌ Error Whisper: {e}")
+        logger.warning(f"⚠️ No se pudo sincronizar dispositivo con NLP Service: {e}")
 
-    # 2. Recargar TTS (XTTS v2)
-    try:
-        if tts:
-            del tts
-
-        tts = TTS(model_name="tts_models/multilingual/multi-dataset/xtts_v2")
-        tts.to(device)
-
-        logger.info(f"✅ TTS activo en {device.upper()}")
-    except Exception as e:
-        logger.error(f"❌ Error TTS: {e}")
-
-    # 3. Recargar NLP Processor (Clasificación e Intención)
+    # 2. Recargar NLP Processor Local (si queda algo)
     try:
         await nlp_processor.initialize() 
         logger.info(f"✅ NLP Processor movido a {device}")
     except Exception as e:
         logger.error(f"❌ Error NLP: {e}")
 
-    # 4. Recargar Motor Semántico (Similitud de Sinopsis)
+    # 3. Recargar Motor Semántico (Similitud de Sinopsis)
     try:
         rec_service.reload_model()
         logger.info(f"✅ Motor Semántico movido a {device}")
@@ -113,6 +93,14 @@ async def startup():
         
     await tmdb_service.initialize()
     await load_models_async()
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    """Cerrar conexiones al detener el servicio."""
+    global redis_client
+    if redis_client:
+        await redis_client.close()
+        logger.info("🔒 Conexión Redis cerrada")
 
 @app.post("/system/set-device")
 async def set_system_device(payload: dict, background_tasks: BackgroundTasks):
@@ -274,28 +262,26 @@ async def speech_to_text(file: UploadFile = File(...)):
             os.remove(tmp_path)
 
 @app.post("/text-to-speech")
-def text_to_speech(payload: dict):
+async def text_to_speech(payload: dict):
     text = payload.get("text", "Hola")
     voice_file = payload.get("voice", "")
     
-    speaker_wav = None
-    if voice_file and voice_file != "default (sistema)":
-        path = os.path.join(VOICE_DIR, voice_file)
-        if os.path.exists(path):
-            speaker_wav = path
-            
-    if not speaker_wav:
-        wavs = glob.glob(os.path.join(VOICE_DIR, "*.wav"))
-        speaker_wav = wavs[0] if wavs else None
+    # Limpiar nombre de voz para enviar solo el filename
+    voice_clean = voice_file.replace("default (sistema)", "default")
 
-    if not speaker_wav:
-        # Fallback de emergencia si no hay wavs
-        raise HTTPException(status_code=500, detail="No hay voces base para clonar.")
-
-    output_path = f"/tmp/{uuid.uuid4()}.wav"
     try:
-        tts.tts_to_file(text=text, speaker_wav=speaker_wav, language="es", file_path=output_path)
-        return StreamingResponse(open(output_path, "rb"), media_type="audio/wav")
+        # Delegar síntesis al microservicio NLP
+        resp = requests.post(
+            f"{NLP_SERVICE_URL}/tts", 
+            json={"text": text, "voice": voice_clean},
+            timeout=60,
+            stream=True
+        )
+        
+        if resp.status_code != 200:
+             raise HTTPException(status_code=500, detail=f"Error NLP TTS: {resp.text}")
+             
+        return StreamingResponse(io.BytesIO(resp.content), media_type="audio/wav")
     except Exception as e:
         logger.error(f"Error TTS: {e}")
         raise HTTPException(status_code=500, detail=str(e))

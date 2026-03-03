@@ -37,6 +37,32 @@ class TTSProcessor:
                 return tts.to(device)
 
             self.model = await asyncio.to_thread(_load)
+            # algunos lanzamientos de PyTorch/transformers devuelven un
+            # GPT2InferenceModel que, por alguna razón, no expone el
+            # método `generate` usado internamente por la librería TTS.
+            # Cuando esto sucede, todas las llamadas a tts_to_file fallan con
+            # AttributeError ('GPT2InferenceModel' object has no attribute
+            # 'generate').
+            #
+            # La solución consiste en parchear el modelo justo después de
+            # cargarlo: añadimos un stub `generate` que delegue en
+            # `__call__` (o `forward`) para que la librería pueda usarlo.
+            # Esto evita tener que cambiar de versión inmediatamente y es
+            # totalmente inocuo si el método ya existe.
+            try:
+                base_model = getattr(self.model, "model", self.model)
+                if base_model.__class__.__name__ == "GPT2InferenceModel":
+                    if not hasattr(base_model, "generate"):
+                        def _fake_generate(*args, **kwargs):
+                            # la firma exacta no importa, sólo que devuelva
+                            # algo utilizable.
+                            return base_model(*args, **kwargs)
+                        base_model.generate = _fake_generate  # type: ignore
+                        logger.debug("Parche aplicado: agregado método generate a GPT2InferenceModel")
+            except Exception:
+                # no queremos romper la carga si algo sale mal
+                logger.warning("No se pudo parchear GPT2InferenceModel, continúo sin parche")
+
             logger.info("✅ TTS Cargado correctamente.")
         except Exception as e:
             logger.error(f"❌ Error cargando TTS: {e}")
@@ -104,7 +130,7 @@ class TTSProcessor:
             logger.error(f"❌ Error eliminando voz {voice_id}: {e}")
             return False
 
-    async def synthesize(self, text: str, voice_id: str = "default", language: str = "es") -> bytes:
+    async def synthesize(self, text: str, voice_id: str = "default", language: str = "es", speaker_wav_path: str = None) -> bytes:
         if not self.model: await self.initialize()
         
         output_path = self.temp_dir / f"output_{os.getpid()}_{hash(text)}.wav"
@@ -113,8 +139,12 @@ class TTSProcessor:
             speaker_wav = None
             fallback_speaker = None
 
+            # 0. Si se pasa un path directo (compatibilidad con main.py)
+            if speaker_wav_path and os.path.exists(speaker_wav_path):
+                speaker_wav = speaker_wav_path
+
             # Verificar si es una voz clonada explícita
-            if voice_id != "default":
+            elif voice_id != "default":
                 clone_path = self.clones_dir / voice_id / "reference.wav"
                 if clone_path.exists():
                     speaker_wav = str(clone_path.absolute())
